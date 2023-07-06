@@ -581,7 +581,7 @@ i.fa {
     height: 20px !important; } }
 
 .sitter-srch-wrap {
-  background: url(../images/sitter-srch-bg.png);
+  background: url(../images/sitter-srch-bg.html);
   background-position: center center;
   background-size: cover;
   text-align: center; }
@@ -880,7 +880,7 @@ header {
 
 footer {
   background-color: #738cb3;
-  background-image: url(../images/ftr-bg.jpg);
+  background-image: url(../images/ftr-bg.html);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1021,7 +1021,7 @@ input[type=text], select, textarea {
 
 select {
   padding-right: 2.2em;
-  background: url(../images/caret.svg) right 0.8em top 50% no-repeat #fff;
+  background: url(../images/caret.html) right 0.8em top 50% no-repeat #fff;
   background-size: .6em; }
 
 textarea {
