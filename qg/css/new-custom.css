@@ -1,0 +1,9 @@
+/* New Custom Styles */
+/*Media queries*/
+@media (min-width: 150px) and (max-width: 767px){
+    .audio-player {width:100% !important;margin-top: 0 !important}
+}
+
+header.sticky-header > #header-wrap > .container > nav#primary-menu > ul > li:last-child > .audio-player {margin-top:11px !important;}
+
+.audio-player {width:150px;margin-top:33px;}
