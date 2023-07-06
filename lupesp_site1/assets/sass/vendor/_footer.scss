@@ -1,0 +1,92 @@
+// Footer Section
+.footer-section {
+  background-color: var(--black-color);
+  width: 100%;
+  @include padding(3rem 0);
+  @include margin(0);
+  .about-ft {
+    .logo-brand-ft {
+      @include font-b();
+      @include font-size(2rem);
+      @include position-r();
+      color: var(--white-color);
+      text-decoration: none;
+    }
+    .description {
+      margin-top: 1rem;
+      p {
+        color: var(--white-color);
+        @include font-size(15px);
+        @include font-normal();
+        @include position-r();
+        text-align: left;
+        line-height: 28px;
+      }
+    }
+    .social-list {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 100%;
+      list-style-type: none;
+      li {
+        margin-right: 20px;
+        .social-link-ft {
+          .fa {
+            color: var(--white-color);
+            @include font-size(16px);
+          }
+        }
+      }
+    }
+  }
+  .link-ft {
+    vertical-align: middle;
+    margin-top: 10px;
+    list-style-type: none;
+    h2 {
+      @include font-size(1.20rem);
+      @include font-normal();
+      @include position-r();
+      text-align: left;
+      text-transform: uppercase;
+      color: var(--white-color);
+      margin-bottom: 2rem;
+    }
+    .link-items {
+      margin-bottom: 10px;
+      a {
+        @include font-size(15px);
+        @include font-normal();
+        @include position-r();
+        text-align: left;
+        text-decoration: none;
+        color: var(--gray-color);
+      }
+      p {
+        color: var(--gray-color);
+        @include font-size(15);
+        line-height: 28px;
+        @include font-normal();
+      }
+    }
+  }
+}
+
+.bottom-fixed-footer {
+  background-color: var(--black1-color);
+  @include padding(2rem 0);
+  text-align: center;
+  p {
+    // @include padding(2rem 0);
+    color: var(--white-color);
+    width: 100%;
+    vertical-align: middle;
+    @include font-normal();
+    @include font-size(16px);
+    a {
+      color: var(--bluedark-color);
+      text-decoration: none;
+    }
+  }
+}

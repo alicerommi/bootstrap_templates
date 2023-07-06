@@ -1,0 +1,200 @@
+// Calendar Section
+#calendar {
+  margin: 3em 0 !important;
+}
+
+.fc .fc-toolbar > * > :first-child {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+
+.fc-state-default {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.fc-state-active {
+  background-color: $color6 !important;
+  color: $color2 !important;
+  font-size: 13px !important;
+  font-family: $font-slack;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  padding: 16px 0 !important;
+  border-radius: 50px !important;
+  // transform: scale(1.1);
+  line-height: 0;
+  width: 80px;
+  border: 2px solid $color6 !important;
+}
+
+.fc-agendaWeek-button {
+  background-color: #ecf0f1 !important;
+  color: $color5 !important;
+  font-size: 14px !important;
+  font-family: $font-slack;
+  font-weight: 500;
+  padding: 16px 0 !important;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 0;
+  width: 80px;
+  border-radius: 50px !important;
+  @include transition(0.25s ease);
+  &:hover {
+    background-color: $color6 !important;
+    color: $color2 !important;
+    @include transition(0.25s ease);
+  }
+}
+
+.fc-agendaDay-button {
+  background-color: #ecf0f1 !important;
+  color: $color5 !important;
+  font-size: 14px !important;
+  font-family: $font-slack;
+  font-weight: 500;
+  padding: 16px 0 !important;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 0;
+  width: 80px;
+  border-radius: 50px !important;
+  @include transition(0.25s ease);
+  &:hover {
+    background-color: $color6 !important;
+    color: $color2 !important;
+    @include transition(0.25s ease);
+  }
+}
+
+.fc-month-button {
+  background-color: #ecf0f1 !important;
+  color: $color5 !important;
+  font-size: 14px !important;
+  font-family: $font-slack;
+  font-weight: 500;
+  padding: 16px 0 !important;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 0;
+  width: 80px;
+  border-radius: 50px !important;
+  @include transition(0.25s ease);
+  &:hover {
+    background-color: $color6 !important;
+    color: $color2 !important;
+    @include transition(0.25s ease);
+  }
+}
+
+.fc-listWeek-button {
+  background-color: #ecf0f1 !important;
+  color: $color5 !important;
+  font-size: 14px !important;
+  font-family: $font-slack;
+  font-weight: 500;
+  padding: 16px 0 !important;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 0;
+  width: 80px;
+  border-radius: 50px !important;
+  @include transition(0.25s ease);
+  &:hover {
+    background-color: $color6 !important;
+    color: $color2 !important;
+    @include transition(0.25s ease);
+  }
+}
+
+.fc-today-button {
+  background-color: #ecf0f1 !important;
+  color: $color5 !important;
+  font-size: 14px !important;
+  font-family: $font-slack;
+  font-weight: 500;
+  padding: 16px 0 !important;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 0;
+  width: 80px;
+  border-radius: 50px !important;
+  text-align: center;
+  justify-content: center;
+  @include transition(0.25s ease);
+  &:hover {
+    background-color: $color6 !important;
+    color: $color2 !important;
+    @include transition(0.25s ease);
+  }
+}
+
+.fc-prev-button,
+.fc-next-button {
+  .fc-icon {
+    color: $color6;
+  }
+}
+
+.fc-day-header {
+  height: 100px;
+  span {
+    color: #34495e;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $font-slack;
+    vertical-align: middle;
+    position: relative;
+    top: 10%;
+  }
+}
+
+.fc-event-container {
+  .fc-day-grid-event {
+    border: none !important;
+    background: $color6 !important;
+    // background: -webkit-linear-gradient(to right, #0083B0, #00B4DB) !important;
+    // background: linear-gradient(to right, #0083B0, #00B4DB) !important;
+    // position: relative;
+    padding: 5px 10px;
+    color: $color2 !important;
+    font-size: 14px !important;
+    font-family: $font-slack;
+    font-weight: 600;
+  }
+  .fc-time-grid-event {
+    border: none !important;
+    background: $color6 !important;
+    // background: -webkit-linear-gradient(to right, #0083B0, #00B4DB) !important;
+    // background: linear-gradient(to right, #0083B0, #00B4DB) !important;
+    // position: relative;
+    padding: 5px 10px;
+    color: $color2 !important;
+    font-size: 14px !important;
+    font-family: $font-slack;
+    font-weight: 600;
+  }
+
+}
+
+.fc-content-skeleton {
+  table {
+    tbody {
+      tr {
+        td {
+          // height: 100px;
+        }
+      }
+    }
+  }
+}

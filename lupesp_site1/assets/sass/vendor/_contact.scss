@@ -1,0 +1,152 @@
+// Work With Contact
+.work-contact {
+  @include margin(0);
+  @include padding(3rem 0);
+  width: 100%;
+  background-image: url('../images/img-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  background-attachment: fixed;
+  @include position-r();
+  text-align: center;
+  &::before {
+    content: '';
+    @include position-a();
+    top: 0;
+    bototm: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .info {
+    max-width: 760px;
+    @include margin(0 auto);
+    margin-top: 2rem;
+    p {
+      @include font-size(16px);
+      @include font-normal();
+      @include position-r();
+      text-align: center;
+      color: var(--white-color);
+      line-height: 28px;
+    }
+    .btn {
+      @include gradient-background-blue();
+      @include padding(.75rem 2rem);
+      @include border-radius(50px);
+      @include position-r();
+      text-align: center;
+      border: none;
+      @include font-size(16px);
+      @include font-normal();
+    }
+  }
+}
+
+// Contact Slide Fixed
+.contact-slide {
+  background-color: var(--black-color);
+  width: 100%;
+  @include position-f();
+  bottom: -550px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  @include padding(3rem 0);
+  @include transition(0.65s ease);
+  border: 10px solid rgba(255, 255, 255, 0.8);
+  // display: none;
+  .dismise-close {
+    .dismise-btn {
+      background-color: transparent;
+      @include position-a();
+      right: 30px;
+      top: 20px;
+      border: none;
+      box-shadow: none;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+      .fa {
+        color: var(--white-color);
+        @include font-size(18px);
+      }
+    }
+  }
+  .contact-info {
+    .info-heading {
+      h2 {
+        @include font-size(1rem);
+        @include font-extranormal();
+        @include position-r();
+        color: var(--white-color);
+      }
+    }
+    .list-info {
+      margin-top: 1rem;
+      list-style-type: none;
+      display: block;
+      li {
+        margin-bottom: 10px;
+        figure {
+          color: var(--white-color);
+          @include font-size(15px);
+          @include font-normal();
+          @include position-r();
+          text-align: left;
+          margin-bottom: 0;
+          .fa {
+            color: var(--white-color);
+            @include font-size(16px);
+            padding-right: 15px;
+          }
+          p {
+            color: var(--white-color);
+            @include position-r();
+            @include font-normal();
+            @include font-size(15px);
+            padding-left: 30px;
+          }
+        }
+      }
+    }
+  }
+  .form-content {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .form-group {
+      label {
+        color: var(--white-color);
+        @include font-size(15px);
+        @include font-normal();
+      }
+      .form-control {
+        background-color: transparent;
+        border: 2px solid var(--white-color);
+        color: var(--white-color);
+        @include font-size(16px);
+        @include font-normal();
+        @include padding(.35rem 1rem);
+        resize: none;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      .btn {
+        @include gradient-background-blue();
+        @include font-size(16px);
+        @include font-normal();
+        text-align: center;
+        border: none;
+        @include border-radius(50px);
+        @include padding(.65rem 2rem);
+      }
+    }
+  }
+}

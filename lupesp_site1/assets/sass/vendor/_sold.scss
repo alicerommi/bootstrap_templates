@@ -1,0 +1,231 @@
+
+// Features Section
+.features-properties-section {
+  background-color: var(--black1-color) !important;
+}
+.sold-properties-inline {
+  @include flexbox();
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.center-button {
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+  .btn {
+    @include gradient-background-blue();
+    border: none;
+    @include border-radius(50px);
+    @include padding(.65rem 2rem);
+    text-align: center;
+    color: var(--white-color);
+    @include font-size(16px);
+    @include font-normal();
+  }
+}
+// Sold Properties Section
+.sold-properties-section {
+  padding: 4rem 0;
+  margin: 0;
+  width: 100%;
+  background-color: var(--white-color);
+  .heading {
+    text-align: center;
+    width: 730px;
+    margin: 0 auto;
+    h2 {
+      color: var(--black-color);
+      @include font-bold();
+      @include position-r();
+      @include font-size(2em);
+      text-align: center;
+      text-transform: uppercase;
+      span {
+        color: var(--bluedark-color);
+      }
+    }
+    .white {
+      color: var(--white-color);
+      @include font-bold();
+      @include position-r();
+      @include font-size(2em);
+      text-align: center;
+      text-transform: uppercase;
+      span {
+        color: var(--bluedark-color);
+      }
+    }
+    p {
+      color: var(--gray2-color);
+      @include font-size(16px);
+      @include position-r();
+      @include font-light();
+      text-align: center;
+      display: inline-block;
+    }
+  }
+  .sold-properties__area {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2rem;
+    width: 100%;
+    [class*=" imghvr-"], [class^="imghvr-"] {
+      background-color: var(--white-color) !important;
+    }
+    [class*=" imghvr-reveal-"]::before, [class^="imghvr-reveal-"]::before {
+      z-index: 10;
+      background-color: var(--bluedark-color) !important;
+      // opacity: 0.8;
+    }
+    [class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
+      background-color: var(--black-color);
+    }
+    figcaption {
+      z-index: 12;
+      // position: relative;
+      .info {
+        @include position-r();
+        margin-top: 3rem;
+        p {
+          color: var(--white-color);
+          @include position-r();
+          @include font-normal();
+          @include font-size(15px);
+          z-index: 15;
+          text-align: center;
+        }
+      }
+      .button {
+        @include position-r();
+        .btn {
+          @include position-r();
+          @include gradient-background-blue();
+          @include border-radius(50px);
+          @include padding(.45rem 1.10rem);
+          @include font-size(14px);
+          border: 0 !important;
+        }
+      }
+    }
+    .sold-description {
+      box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.14);
+      border-bottom: 3px solid var(--black-color);
+      width: 100%;
+      .sold-images {
+        height: 230px;
+        width: 100%;
+        .properties-image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .properties-info {
+        padding: 1.20rem 1.50rem;
+        .link-info {
+          @include font-size(1.10rem);
+          @include position-r();
+          @include font-normal();
+          color: var(--black-color);
+          text-align: left;
+          text-decoration: none;
+        }
+        .list-info {
+          .list-inline-item {
+            a {
+              color: var(--gray2-color);
+              @include font-size(14px);
+              @include font-light();
+              @include position-r();
+              text-align: left;
+              text-decoration: none;
+            }
+          }
+        }
+        .price {
+          h4 {
+            color: var(--bluedark-color);
+            @include font-size(1.50em);
+            @include font-bold();
+            @include position-r();
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.swiper-container {
+      width: 100%;
+      height: 100%;
+      .button-group {
+        margin-top: 3rem;
+        text-align: center;
+        .btn {
+          @include gradient-background-blue();
+          color: var(--white-color);
+          @include font-size(16);
+          @include font-normal();
+          @include border-radius(50px);
+          @include transition(0.25s ease);
+          @include padding(.85rem 3rem);
+          border: none;
+        }
+      }
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  background-image: none !important;
+}
+
+.slide_button {
+  @include flexbox();
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  .swiper-button-next, .swiper-button-prev {
+      position: relative !important;
+      top: 50%;
+      width: 50px !important;
+      height: 50px !important;
+      margin-top: -22px;
+      z-index: 10;
+      cursor: pointer;
+      background-size: 27px 44px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: black;
+      line-height: 50px;
+      text-align: center;
+      .fa {
+        color: var(--white-color);
+        @include font-size(1rem);
+      }
+  }
+  .swiper-button-prev {
+    margin-right: 30px;
+  }
+}

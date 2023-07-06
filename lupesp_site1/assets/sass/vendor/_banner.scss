@@ -1,0 +1,34 @@
+// Banner Header Section
+.banner-header {
+  background-image: url('../images/main/01.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  @include padding(4rem 0);
+  @include margin(0);
+  @include position-r();
+  &:before {
+    content: '';
+    @include position-a();
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+  }
+  .heading {
+    h2 {
+      color: var(--white-color);
+      @include font-size(2rem);
+      @include font-bold();
+      @include position-r();
+      text-align: center;
+      display: block;
+    }
+  }
+}

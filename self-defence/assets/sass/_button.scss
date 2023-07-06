@@ -1,0 +1,43 @@
+@import '_base';
+
+// Button
+.btn-header {
+  background-color: transparent;
+  border: 2px solid $color2;
+  border-radius: 50px;
+  padding: 10px 2.5em;
+  // height: 50px;
+  // width: 160px;
+  // line-height: 32px;
+  font-family: $font-slack;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 2em;
+}
+.btn-header-active {
+  // background-color: transparent;
+  // border: 2px solid $color1;
+  border-radius: 50px;
+  padding: 10px 3em;
+  // height: 50px;
+  // width: 160px;
+  // line-height: 32px;
+  font-family: $font-slack;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 2em;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: $color6;
+  border-width: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  text-align: center;
+  color: $color6;
+  padding: 15px 2em;
+  border-radius: 0;
+}

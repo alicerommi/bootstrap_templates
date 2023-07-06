@@ -1,0 +1,111 @@
+// Blog Section
+.blog-section {
+  @include padding(4rem 0);
+  @include margin(0);
+  width: 100%;
+  .blog-image {
+    height: 300px;
+    width: 500px;
+    margin-bottom: 2rem;
+    .img-blog {
+      width: 100%;
+      height: 100%;
+      @include position-r();
+    }
+    .translate-image {
+      transform: translateX(-12%);
+    }
+  }
+  .blog-description {
+    background-color: var(--white-color);
+    @include box-shadow();
+    @include border-radius(0);
+    @include position-r();
+    text-align: left;
+    @include padding(1.40rem 2rem);
+    transform: translateY(10%);
+    margin-bottom: 2rem;
+    z-index: 1;
+    border-left: 3px solid var(--bluelight-color);
+    .small-title {
+      @include font-size(14px);
+      @include font-normal();
+      @include position-r();
+      text-align: left;
+      color: var(--gray-color);
+    }
+    .large-heading {
+      @include font-size(1.50rem);
+      @include font-extranormal();
+      @include position-r();
+      color: var(--bluedark-color);
+    }
+    .title {
+      color: var(--gray2-color);
+      @include position-r();
+      @include font-size(16px);
+      @include font-normal();
+      text-align: left;
+      line-height: 26px;
+    }
+    .read-more {
+      margin-top: 1.40rem;
+      @include font-size(16px);
+      @include font-normal();
+      @include position-r();
+      color: var(--bluedark-color);
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}
+
+.blog-more-content {
+  .blog-image {
+    width: 100%;
+    height: 550px;
+    margin-top: 2.40rem;
+    .img-blog {
+      width: 100%;
+      height: 100%;
+      @include position-r();
+    }
+  }
+  .blog-info {
+    background-color: var(--white-color);
+    @include box-shadow();
+    @include border-radius(0);
+    @include position-r();
+    text-align: left;
+    @include padding(1.40rem 2rem);
+    transform: translateY(-15%);
+    margin-bottom: 0;
+    z-index: 1;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    .small-title {
+      @include font-size(14px);
+      @include font-normal();
+      @include position-r();
+      text-align: left;
+      color: var(--gray-color);
+    }
+    .title {
+      color: var(--gray2-color);
+      @include position-r();
+      @include font-size(16px);
+      @include font-normal();
+      text-align: left;
+      line-height: 26px;
+    }
+    .read-more {
+      margin-top: 1.40rem;
+      @include font-size(16px);
+      @include font-normal();
+      @include position-r();
+      color: var(--bluedark-color);
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}

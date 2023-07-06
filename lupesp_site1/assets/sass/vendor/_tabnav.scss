@@ -1,0 +1,67 @@
+// Marketing Section
+.marketing-section {
+  @include margin(0);
+  @include padding(3rem 0);
+  width: 100%;
+  background-color: var(--white-color);
+  .nav-tabs {
+    justify-content: center;
+    margin-top: 2rem;
+    border: none;
+    .nav-item {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .active {
+        background-color: var(--black-color);
+        color: var(--white-color);
+        border: none;
+        transform: scale(1.1);
+        @include box-shadow();
+      }
+      .nav-link {
+        text-align: center;
+        display: block;
+        width: 190px;
+        padding-top: 15px;
+        @include padding(15px 2rem);
+        .icon {
+          .icon-tab {
+            // display: block;
+            width: auto;
+            height: auto;
+          }
+        }
+        p {
+          // @include padding(.78rem 2rem);
+          // width: 100px;
+          line-height: 20px;
+          margin-top: 1rem;
+          @include font-size(16px);
+          text-transform: uppercase;
+          @include font-normal();
+        }
+      }
+    }
+  }
+  .tab-content {
+    background-color: var(--white-color);
+    @include padding(1rem 2rem);
+    .tab-pane {
+      .tab-wrapper {
+        @include flexbox();
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .columns {
+          margin-bottom: 2rem;
+          @include flexbox();
+          justify-content: flex-start;
+          .icons {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

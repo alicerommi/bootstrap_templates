@@ -1,0 +1,116 @@
+// Mixin Transition
+@mixin transition($transition) {
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+}
+
+// Mixin Flebox
+@mixin flexbox() {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: flex;
+}
+
+// Mixin Border Radius
+@mixin border-radius($border-radius) {
+  border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  -ms-border-radius: $border-radius;
+}
+
+// Mixin Font
+@mixin font-normal() {
+  font-family: var(--font-slack);
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Mixin Font
+@mixin font-light() {
+  font-family: var(--font-slack);
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Mixin Font
+@mixin font-extra() {
+  font-family: var(--font-slack);
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Mixin Font
+@mixin font-extranormal() {
+  font-family: var(--font-slack);
+  font-weight: 600;
+  font-style: normal;
+}
+
+// Mixin Font
+@mixin font-bold() {
+  font-family: var(--font-slack);
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Mixin Font
+
+@mixin font-b() {
+  font-family: var(--font-bold);
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Mixin Position
+@mixin position-r() {
+  position: relative;
+}
+
+@mixin position-a() {
+  position: absolute;
+}
+
+@mixin position-f() {
+  position: fixed;
+}
+
+// Mixin font-size
+@mixin font-size($font-size) {
+  font-size: $font-size;
+}
+
+// Mixin Padding
+@mixin padding($padding) {
+  padding: $padding;
+}
+
+// Mixin Margin
+@mixin margin($margin) {
+  margin: $margin;
+}
+
+// Mixin Box shadow
+@mixin box-shadow() {
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+// Gradient Background Color
+@mixin gradient-background-blue() {
+  background-image: linear-gradient(to right, #5989e5, #37cfdc);
+}
+
+@mixin gradient-background-blue-hover() {
+  background-image: linear-gradient(to right, #37cfdc, #5989e5);
+}
+
+// Mixin Border-box
+@mixin box-sizing() {
+  box-sizing: border-box;
+  box-sizing: -webkit-border-box;
+  box-sizing: -moz-border-box;
+  box-sizing: -ms-border-box;
+}

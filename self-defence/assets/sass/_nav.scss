@@ -1,0 +1,107 @@
+@import '_var';
+
+// Navbar Section
+.scrolled {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    padding: 20px 0;
+    @include transition(top 0.45s ease);
+}
+
+.scrolled .navbar-nav {
+    // padding: 1rem 2rem;
+    transition: 0.35s all ease;
+}
+
+.scrolled .nav-item {
+    color: white;
+    transition: 0.2s all ease-in-out;
+}
+
+.scrolled .navbar-nav .nav-item a {
+  font-size: 18px;
+  font-family: $font-slack;
+  font-weight: 400;
+  position: relative;
+  color: $color7;
+}
+.navbar-expand-lg {
+  background-color: $color2 !important;
+  // height: 10vh;
+  padding: 20px 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  @include transition(top 0.45s ease);
+  .navbar-nav {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+    .nav-item {
+      a {
+        font-size: 18px;
+        font-family: $font-slack;
+        font-weight: 400;
+        position: relative;
+        color: $color7;
+        &:focus {
+          outline: none;
+        }
+
+      }
+    }
+    .dropdown {
+      a {
+        &:focus {
+          color: #848484 !important;
+          font-weight: 400 !important;
+          outline: none;
+        }
+        &:active {
+          outline: none;
+        }
+      }
+    }
+    .dropdown-toggle::after {
+      top: 2px;
+      position: relative;
+    }
+  }
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: $color6;
+  font-weight: 600;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  margin-top: 18px;
+  border-radius: 1px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-expand-lg {
+    .navbar-nav {
+      display: block;
+    }
+  }
+}
+
+.navbar-light .navbar-toggler {
+  border: none !important;
+  &:focus {
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

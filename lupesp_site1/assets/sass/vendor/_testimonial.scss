@@ -1,0 +1,107 @@
+// Testimonial Section
+.testimonial-section {
+  @include margin(0);
+  @include padding(3rem 0);
+  width: 100%;
+  background-color: var(--black-color);
+  .swiper-container {
+    margin-top: 3rem;
+    width: 100%;
+    height: 100%;
+    .swiper-wrapper {
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        .testimonial-slide {
+          @include flexbox();
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          .client-profile {
+            .user-profile {
+              width: 400px;
+              height: 400px;
+            }
+          }
+          .client-info {
+            background-color: var(--white-color);
+            border-left: 5px solid var(--bluelight-color);
+            @include box-shadow();
+            @include padding(2rem 1.50rem);
+            @include position-r();
+            transform: translate(-12%, 30%);
+            .quote-bg {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              opacity: .1;
+            }
+            .info-details {
+              .info {
+                @include position-r();
+                h5 {
+                  color: var(--black-color);
+                  @include font-bold();
+                  @include font-size(1.50rem);
+                  @include position-r();
+                  margin-bottom: 0;
+                }
+                small {
+                  color: var(--black-color);
+                  @include font-normal();
+                  @include font-size(14px);
+                  @include position-r();
+                  text-align: center;
+                }
+              }
+              p {
+                @include font-normal();
+                @include font-size(16px);
+                @include position-r();
+                text-align: center;
+                line-height: 28px;
+                color: var(--black-color);
+                padding-top: 1.50rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Carousel Component
+.carousel-component-seen {
+  @include margin(0);
+  @include padding(3rem 0);
+  width: 100%;
+  background: var(--white-color);
+  .carousel-slide {
+    .swiper-container {
+      margin-top: 2rem;
+      .swiper-wrapper {
+        .swiper-slide {
+          .image-slide {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

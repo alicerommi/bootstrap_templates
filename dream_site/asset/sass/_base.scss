@@ -1,0 +1,41 @@
+// Font Base
+$font-slack: 'Raleway',
+sans-serif;
+$body-font: 'Karla',
+sans-serif;
+$head-font: 'Karla',
+sans-serif;
+// Color Base
+$primary-color: #fff;
+$secondary-color: #000;
+$color1: #3498db;
+$color2: #EA2027;
+$color3: #ff4d4d;
+$color4: #444;
+$color5: #00a8ff;
+$color6: #e74c3c;
+// Transition Base
+@mixin transition($transition) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+// Flexbox Base
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+// Border Radius Base
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}

@@ -1,0 +1,20 @@
+$font-slack: 'Raleway', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+
+// Base color
+$color1: #2c3e50;
+$color2: #fff;
+$color3: #e5553f;
+$color4: #000;
+$color5: #222;
+$color6: #0069D9;
+$color7: #848484;
+
+// Transition Base
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
