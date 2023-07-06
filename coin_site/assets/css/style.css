@@ -1,0 +1,1036 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box; }
+  *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box; }
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+::-webkit-selection {
+  background-color: #af052f;
+  color: #fff; }
+
+::-moz-selection {
+  background-color: #af052f;
+  color: #fff; }
+
+::selection {
+  background-color: #af052f;
+  color: #fff; }
+
+body {
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+.navbar-expand-lg {
+  background-color: transparent !important;
+  width: 100%;
+  padding: 20px 0 !important;
+  border-top: 5px solid #af052f; }
+  .navbar-expand-lg .navbar-brand {
+    width: 300px; }
+    .navbar-expand-lg .navbar-brand img {
+      width: 100%; }
+  .navbar-expand-lg .navbar-collapse .navbar-nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%; }
+    .navbar-expand-lg .navbar-collapse .navbar-nav .nav-active {
+      position: relative; }
+      .navbar-expand-lg .navbar-collapse .navbar-nav .nav-active a {
+        color: #af052f !important;
+        position: relative; }
+        .navbar-expand-lg .navbar-collapse .navbar-nav .nav-active a:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          width: 85%;
+          padding-left: 5px;
+          height: 3px;
+          background-color: #af052f; }
+        .navbar-expand-lg .navbar-collapse .navbar-nav .nav-active a .fa {
+          padding-left: 10px; }
+    .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item {
+      margin-right: 2rem; }
+      .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .active {
+        color: #af052f !important; }
+      .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item a {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: #000;
+        position: relative;
+        padding-top: 11px;
+        -webkit-transition: 0.25s ease;
+        -moz-transition: 0.25s ease;
+        -ms-transition: 0.25s ease;
+        transition: 0.25s ease; }
+        .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item a:hover {
+          color: #af052f;
+          -webkit-transition: 0.25s ease;
+          -moz-transition: 0.25s ease;
+          -ms-transition: 0.25s ease;
+          transition: 0.25s ease; }
+    .navbar-expand-lg .navbar-collapse .navbar-nav .language-selector {
+      padding-top: 6px;
+      margin-left: 10px; }
+      .navbar-expand-lg .navbar-collapse .navbar-nav .language-selector .dropdown-toggle {
+        color: #9E9E9E; }
+        .navbar-expand-lg .navbar-collapse .navbar-nav .language-selector .dropdown-toggle span {
+          text-transform: uppercase;
+          font-size: 12px;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          padding-left: 5px;
+          color: #9E9E9E; }
+        .navbar-expand-lg .navbar-collapse .navbar-nav .language-selector .dropdown-toggle::after {
+          content: '';
+          position: relative;
+          top: 3px; }
+      .navbar-expand-lg .navbar-collapse .navbar-nav .language-selector a {
+        text-decoration: none; }
+      .navbar-expand-lg .navbar-collapse .navbar-nav .language-selector .dropdown-language {
+        min-width: 8rem;
+        padding: .6rem 1rem; }
+
+.header-section {
+  padding: 8em 0 12em;
+  position: relative;
+  background-color: #af052f; }
+  .header-section .bitcoin-header:before {
+    content: '';
+    background-image: url("../images/bg-header.png");
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; }
+  .header-section .container {
+    max-width: 950px !important;
+    margin: 0 auto; }
+  .header-section .heading h2 {
+    font-size: 2.45rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    position: relative;
+    color: #000;
+    text-transform: lowercase;
+    line-height: 45px; }
+    .header-section .heading h2:before {
+      content: '';
+      position: absolute;
+      width: 310px;
+      height: 3px;
+      background-color: #000;
+      bottom: -20px;
+      right: 40px; }
+  .header-section .title {
+    padding-top: 25px; }
+    .header-section .title p {
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      position: relative;
+      color: #000;
+      vertical-align: center;
+      line-height: 25px; }
+    .header-section .title .links {
+      font-size: 16px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      color: #af052f;
+      position: relative;
+      vertical-align: center;
+      text-decoration: none;
+      text-transform: uppercase; }
+
+.bitcoin-description {
+  background-color: #af052f;
+  padding: 3em 0 10em 0;
+  height: 450px; }
+  .bitcoin-description .container {
+    max-width: 950px !important;
+    margin: 0 auto; }
+  .bitcoin-description .bitcoin-cal {
+    width: 345px;
+    margin-right: 2.25rem; }
+    .bitcoin-description .bitcoin-cal .bitcoin-details small {
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      color: #fff; }
+    .bitcoin-description .bitcoin-cal .bitcoin-details h2 {
+      font-size: 1.65rem;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      color: #fff;
+      vertical-align: center; }
+    .bitcoin-description .bitcoin-cal .bitcoin-details p {
+      font-size: 13px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      color: #fff;
+      position: relative;
+      vertical-align: center;
+      padding-top: 8px; }
+  .bitcoin-description .total-eq {
+    background-color: #fff;
+    padding: 25px 30px 10px 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* hide default down arrow in IE10*/
+    /* hack to fall back in opera */ }
+    .bitcoin-description .total-eq .number-value {
+      width: 50px;
+      margin-right: 30px; }
+      .bitcoin-description .total-eq .number-value .form-control {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 10px; }
+        .bitcoin-description .total-eq .number-value .form-control:focus {
+          outline: none;
+          box-shadow: none; }
+    .bitcoin-description .total-eq .multiply, .bitcoin-description .total-eq .equal {
+      font-size: 16px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      color: #000;
+      padding-right: 20px;
+      padding-top: 6px;
+      position: relative; }
+    .bitcoin-description .total-eq .total {
+      position: relative;
+      top: 6px; }
+      .bitcoin-description .total-eq .total .total-no {
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 6px 20px; }
+    .bitcoin-description .total-eq .styled-select {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      height: 40px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      overflow: hidden;
+      position: relative; }
+    .bitcoin-description .total-eq .styled-select,
+    .bitcoin-description .total-eq .styled-select select {
+      width: 70px;
+      margin-right: 20px; }
+    .bitcoin-description .total-eq select:focus {
+      outline: none; }
+    .bitcoin-description .total-eq .styled-select select {
+      height: 34px;
+      padding: 5px 0 5px 5px;
+      background: transparent;
+      border: none;
+      /*hide default down arrow in webkit */
+      -webkit-appearance: none; }
+@-moz-document url-prefix() {
+  .bitcoin-description .total-eq .styled-select select {
+    width: 130%; } }
+    .bitcoin-description .total-eq .fa-sort-desc {
+      position: absolute;
+      top: 6px;
+      right: 12px;
+      font-size: 18px; }
+    .bitcoin-description .total-eq select::-ms-expand {
+      display: none; }
+    .bitcoin-description .total-eq .selector .styled-select,
+    .bitcoin-description .total-eq _:-o-prefocus .styled-select {
+      background: none; }
+  .bitcoin-description .currency-col {
+    margin-top: 45px; }
+    .bitcoin-description .currency-col .heading h4 {
+      color: #fff;
+      font-size: 1.35rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      position: relative;
+      vertical-align: center;
+      line-height: 10px;
+      text-transform: uppercase; }
+    .bitcoin-description .currency-col .heading h2 {
+      color: #fff;
+      font-size: 2rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      position: relative;
+      vertical-align: center; }
+  .bitcoin-description .container-wrapper {
+    max-width: 1200px;
+    margin: 0 auto; }
+  .bitcoin-description .bitcoin-columns {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 1.5em; }
+    .bitcoin-description .bitcoin-columns .bitcoin-currency {
+      background-color: #fff;
+      padding: 25px 35px 0px 35px;
+      border-radius: 10px;
+      margin-right: 15px;
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15); }
+      .bitcoin-description .bitcoin-columns .bitcoin-currency .icon img {
+        width: 40px;
+        height: 40px; }
+      .bitcoin-description .bitcoin-columns .bitcoin-currency .icon small {
+        font-size: 17px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        vertical-align: center;
+        color: #000;
+        position: relative;
+        text-transform: uppercase;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 5px; }
+      .bitcoin-description .bitcoin-columns .bitcoin-currency .icon span {
+        position: relative;
+        top: 5px; }
+        .bitcoin-description .bitcoin-columns .bitcoin-currency .icon span .fa {
+          font-size: 18px;
+          color: #af052f; }
+        .bitcoin-description .bitcoin-columns .bitcoin-currency .icon span .green-icon {
+          color: #27ea00; }
+      .bitcoin-description .bitcoin-columns .bitcoin-currency .bitcoin-list {
+        padding-top: 25px; }
+        .bitcoin-description .bitcoin-columns .bitcoin-currency .bitcoin-list .list {
+          list-style-type: none; }
+          .bitcoin-description .bitcoin-columns .bitcoin-currency .bitcoin-list .list li {
+            padding-bottom: 0px; }
+            .bitcoin-description .bitcoin-columns .bitcoin-currency .bitcoin-list .list li .bitcoin-text {
+              text-transform: uppercase;
+              font-size: 15px;
+              font-family: "Poppins", sans-serif;
+              position: relative;
+              color: #9E9E9E;
+              padding-right: 5px; }
+            .bitcoin-description .bitcoin-columns .bitcoin-currency .bitcoin-list .list li .bitcoin-counter {
+              text-transform: uppercase;
+              font-family: "Poppins", sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              color: #000;
+              position: relative; }
+            .bitcoin-description .bitcoin-columns .bitcoin-currency .bitcoin-list .list li p {
+              font-size: 12px;
+              font-family: "Poppins", sans-serif;
+              font-weight: 500;
+              color: #9E9E9E;
+              position: relative; }
+
+@media screen and (max-width: 767px) {
+  .bitcoin-columns {
+    position: relative; }
+    .bitcoin-columns .bitcoin-currency {
+      margin-bottom: 1.35em; }
+
+  .bitcoin-description {
+    height: auto; }
+
+  .container-wrapper {
+    max-width: 1024px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto; } }
+.exchange-currency-search {
+  background-color: #ebebeb;
+  width: 100%;
+  padding-top: 12em;
+  padding-bottom: 2em; }
+  .exchange-currency-search .heading {
+    max-width: 400px;
+    margin: 0 auto; }
+    .exchange-currency-search .heading h2 {
+      font-size: 2.45rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      color: #000;
+      position: relative; }
+      .exchange-currency-search .heading h2 span {
+        color: #af052f;
+        font-weight: 600; }
+  .exchange-currency-search .search-bar {
+    transform: translateY(110%); }
+    .exchange-currency-search .search-bar .search-input .form-group {
+      position: relative; }
+      .exchange-currency-search .search-bar .search-input .form-group .form-control {
+        border-radius: 50px;
+        padding: 1.65rem 3rem;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+        border: none; }
+      .exchange-currency-search .search-bar .search-input .form-group .submit {
+        position: absolute;
+        top: 7px;
+        right: 8px;
+        border-radius: 50px;
+        cursor: pointer;
+        height: 60px;
+        width: 60px;
+        border-color: #522789;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#522789+0,a4063a+98 */
+        background: #522789;
+        /* Old browsers */
+        background: -moz-linear-gradient(45deg, #522789 0%, #a4063a 98%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #522789 0%, #a4063a 98%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #522789 0%, #a4063a 98%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#522789', endColorstr='#a4063a',GradientType=1 );
+        /* IE6-9 fallback on horizontal gradient */ }
+        .exchange-currency-search .search-bar .search-input .form-group .submit .fa {
+          font-size: 22px; }
+
+.bitcoin-table {
+  padding: 5em 0 4em 0; }
+  .bitcoin-table .select-table {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    /* hide default down arrow in IE10*/
+    /* hack to fall back in opera */ }
+    .bitcoin-table .select-table .styled-select {
+      border: none;
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+      height: 40px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      overflow: hidden;
+      position: relative; }
+    .bitcoin-table .select-table .styled-select,
+    .bitcoin-table .select-table .styled-select select {
+      width: 110px;
+      margin-right: 20px; }
+    .bitcoin-table .select-table select:focus {
+      outline: none; }
+    .bitcoin-table .select-table .styled-select select {
+      height: 34px;
+      padding: 5px 0 5px 5px;
+      background: transparent;
+      border: none;
+      /*hide default down arrow in webkit */
+      -webkit-appearance: none; }
+@-moz-document url-prefix() {
+  .bitcoin-table .select-table .styled-select select {
+    width: 130%; } }
+    .bitcoin-table .select-table .fa-sort-desc {
+      position: absolute;
+      top: 6px;
+      right: 12px;
+      font-size: 18px; }
+    .bitcoin-table .select-table select::-ms-expand {
+      display: none; }
+    .bitcoin-table .select-table .selector .styled-select,
+    .bitcoin-table .select-table _:-o-prefocus .styled-select {
+      background: none; }
+  .bitcoin-table .select-table-right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+    width: 65%; }
+    .bitcoin-table .select-table-right .btn-view {
+      background-color: #fff;
+      border: none;
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+      color: #000;
+      cursor: pointer;
+      padding: 10px 20px; }
+  .bitcoin-table .table-content {
+    margin-top: 2em; }
+    .bitcoin-table .table-content thead {
+      background-color: transparent;
+      border: none; }
+      .bitcoin-table .table-content thead tr th {
+        text-align: center;
+        border: none;
+        color: #9E9E9E;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 1.45rem 1rem; }
+    .bitcoin-table .table-content .col {
+      position: relative;
+      top: 30px; }
+    .bitcoin-table .table-content .col2 {
+      position: relative;
+      top: 30px; }
+    .bitcoin-table .table-content tbody {
+      background-color: #fff;
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+      margin-bottom: 10px;
+      height: 50px;
+      line-height: 50px; }
+      .bitcoin-table .table-content tbody tr {
+        position: relative;
+        margin-bottom: 40px; }
+        .bitcoin-table .table-content tbody tr th {
+          border: none;
+          font-size: 18px;
+          font-weight: 500;
+          font-family: "Poppins", sans-serif;
+          color: #9E9E9E;
+          padding-right: 40px;
+          padding-left: 20px;
+          text-align: center;
+          position: relative;
+          left: 7px; }
+        .bitcoin-table .table-content tbody tr td {
+          border: none;
+          text-align: center;
+          width: 300px;
+          font-size: 16px;
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          color: #636363; }
+          .bitcoin-table .table-content tbody tr td img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            position: relative;
+            bottom: 3px; }
+        .bitcoin-table .table-content tbody tr .color {
+          color: #0087f8; }
+        .bitcoin-table .table-content tbody tr .green {
+          color: #27ea00; }
+          .bitcoin-table .table-content tbody tr .green .fa {
+            font-size: 8px;
+            position: relative;
+            bottom: 3px;
+            padding-left: 10px; }
+
+#grid {
+  -moz-transform: translate(1px, 0px);
+  -ms-transform: translate(1px, 0px);
+  -webkit-transform: translate(1px, 0px);
+  transform: translate(1px, 0px); }
+
+/* GRAPH - 1 */
+#graph-1 {
+  stroke: url(#gradient-1);
+  stroke-width: 1.5;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -moz-animation: lineani 1.3s linear forwards;
+  -webkit-animation: lineani 1.3s linear forwards;
+  animation: lineani 1.3s linear forwards; }
+
+#graph-2 {
+  stroke: url(#gradient-2);
+  stroke-width: 1.5;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -moz-animation: lineani 1.3s linear forwards;
+  -webkit-animation: lineani 1.3s linear forwards;
+  animation: lineani 1.3s linear forwards; }
+
+#poly-1 {
+  fill: url(#gradient-3); }
+
+#poly-2 {
+  fill: url(#gradient-4); }
+
+@-moz-keyframes lineani {
+  to {
+    stroke-dashoffset: 0; } }
+@-webkit-keyframes lineani {
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes lineani {
+  to {
+    stroke-dashoffset: 0; } }
+.underlay {
+  stroke-width: 5;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #24303a; }
+
+#circle-graph-1 {
+  stroke: url(#gradient-1);
+  stroke-width: 5;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-linejoin: round; }
+
+.chart-circle {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+#circle-graph-2 {
+  stroke: url(#gradient-2);
+  stroke-width: 5;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-linejoin: round; }
+
+.charts-container {
+  width: 70%;
+  max-width: 400px;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 20px; }
+
+.chart {
+  position: relative;
+  height: auto;
+  display: inline-block;
+  float: left;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: -25px;
+  padding: 15px 20px 65px 20px;
+  width: 150px; }
+
+.chart.circle {
+  padding: 15px 20px 40px 20px; }
+
+.title {
+  font-size: 22px;
+  margin-bottom: 12px; }
+
+.chart-circle {
+  display: inline-block;
+  position: relative; }
+
+.chart-svg {
+  position: relative; }
+
+.circle-percentage {
+  position: absolute;
+  color: white;
+  font-size: 48px;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+@media screen and (max-width: 480px) {
+  .circle-percentage {
+    font-size: 32px; } }
+.align-center {
+  text-align: center; }
+
+.chart-line {
+  width: 80%; }
+
+.valueX {
+  font-size: 14px; }
+
+.chart-values {
+  text-align: right;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 15px; }
+
+.h-value {
+  -moz-transition: ease-in-out 700ms;
+  -o-transition: ease-in-out 700ms;
+  -webkit-transition: ease-in-out 700ms;
+  transition: ease-in-out 700ms;
+  opacity: 0; }
+
+.h-value.visible {
+  opacity: 1; }
+
+.percentage-value {
+  -moz-transition: ease-in-out 700ms;
+  -o-transition: ease-in-out 700ms;
+  -webkit-transition: ease-in-out 700ms;
+  transition: ease-in-out 700ms;
+  color: #48c15e;
+  margin-top: 2px;
+  opacity: 0; }
+
+.percentage-value.negative {
+  color: #ef6670; }
+
+.percentage-value.visible {
+  opacity: 1; }
+
+.total-gain {
+  color: white;
+  font-size: 48px; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 0 0 28px;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.triangle.red {
+  border-color: transparent transparent transparent #ef6670; }
+
+.triangle.green {
+  border-color: transparent transparent transparent #48c15e; }
+
+.horizontal,
+.vertical {
+  stroke-width: 0.1;
+  stroke: #4a667a; }
+
+/* CLEARFIX HELPER */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+/*IRRELEVANT CSS*/
+.followlinks {
+  position: fixed;
+  right: 35px;
+  bottom: 15px;
+  display: table; }
+
+.followlinks a {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+  color: white; }
+
+.followlinks a svg path {
+  fill: white; }
+
+.heartIt {
+  margin-top: 50px;
+  margin-bottom: 80px; }
+
+.heartIt p {
+  font-size: 24px;
+  line-height: 40px; }
+
+.heartIt img {
+  width: 64px;
+  height: auto;
+  opacity: 0.7;
+  -webkit-filter: invert(100%);
+  filter: invert(100%); }
+
+.original {
+  color: #ef6670;
+  font-size: 14px; }
+
+.meeting-section {
+  padding: 4em 0;
+  margin: 0;
+  background: #fff;
+  width: 100%; }
+  .meeting-section .heading h6 {
+    text-transform: uppercase;
+    color: #9E9E9E;
+    position: relative;
+    text-align: center;
+    font-size: .95rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    vertical-align: middle; }
+  .meeting-section .heading h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.95rem;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    vertical-align: middle; }
+  .meeting-section .meeting-card {
+    margin-top: 2rem; }
+    .meeting-section .meeting-card .card {
+      padding: 1em;
+      border-radius: 10px;
+      border-color: #ebebeb;
+      border-width: 2px; }
+    .meeting-section .meeting-card .meet-title {
+      padding-top: 15px; }
+      .meeting-section .meeting-card .meet-title h4 {
+        font-size: 1.20rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        position: relative;
+        text-align: left;
+        vertical-align: middle; }
+      .meeting-section .meeting-card .meet-title p {
+        padding-top: 10px;
+        font-family: "Poppins", sans-serif;
+        font-size: .90rem;
+        font-weight: 400;
+        color: #9E9E9E; }
+
+.footer-section {
+  padding: 3rem 0;
+  margin: 0;
+  width: 100%;
+  background: #2d2d2d; }
+  .footer-section .about-ft .ft-logo {
+    width: 200px; }
+    .footer-section .about-ft .ft-logo img {
+      width: 100%; }
+  .footer-section .about-ft p {
+    padding-top: 2rem;
+    font-size: .90rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #ebebeb;
+    position: relative;
+    vertical-align: middle;
+    line-height: 25px;
+    text-align: left; }
+  .footer-section .ft-ablink .link-ab {
+    color: #ebebeb;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    vertical-align: center;
+    text-align: left; }
+  .footer-section .heading-ft h3 {
+    color: #fff;
+    font-size: 1.30rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    text-decoration: underline;
+    position: relative;
+    vertical-align: middle;
+    padding-bottom: 2rem; }
+  .footer-section .heading-ft .detail-ft {
+    padding-bottom: 15px; }
+    .footer-section .heading-ft .detail-ft .ft-line {
+      padding-bottom: 1.6rem; }
+    .footer-section .heading-ft .detail-ft .line-seperator {
+      border: 1px solid #636363; }
+    .footer-section .heading-ft .detail-ft h5 {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      vertical-align: middle;
+      line-height: 25px; }
+    .footer-section .heading-ft .detail-ft h6 {
+      color: #9E9E9E;
+      font-weight: 500;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      vertical-align: middle;
+      font-size: 14px; }
+      .footer-section .heading-ft .detail-ft h6 i {
+        padding-right: 6px;
+        color: #636363; }
+    .footer-section .heading-ft .detail-ft p {
+      color: #9E9E9E;
+      font-size: .90rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      position: relative;
+      text-align: left;
+      vertical-align: middle; }
+    .footer-section .heading-ft .detail-ft small {
+      color: rgba(255, 255, 255, 0.8);
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      position: relative;
+      vertical-align: middle; }
+      .footer-section .heading-ft .detail-ft small img {
+        padding-right: 5px; }
+    .footer-section .heading-ft .detail-ft .add-details {
+      list-style-type: none; }
+      .footer-section .heading-ft .detail-ft .add-details li {
+        color: #9E9E9E;
+        font-size: .90rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        position: relative;
+        text-align: left;
+        vertical-align: middle; }
+        .footer-section .heading-ft .detail-ft .add-details li span {
+          font-size: .85rem;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          position: relative;
+          text-align: left;
+          color: #fff;
+          padding-right: 4px; }
+    .footer-section .heading-ft .detail-ft .social-list-ft {
+      list-style-type: none;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start; }
+      .footer-section .heading-ft .detail-ft .social-list-ft li {
+        margin-right: 15px; }
+        .footer-section .heading-ft .detail-ft .social-list-ft li a {
+          color: #fff;
+          text-decoration: none; }
+          .footer-section .heading-ft .detail-ft .social-list-ft li a i {
+            font-size: 15px;
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+            display: block;
+            position: relative;
+            line-height: 30px;
+            text-align: center; }
+          .footer-section .heading-ft .detail-ft .social-list-ft li a .fa-twitter {
+            background-color: #1da1f2; }
+          .footer-section .heading-ft .detail-ft .social-list-ft li a .fa-facebook {
+            background-color: #3b5998; }
+          .footer-section .heading-ft .detail-ft .social-list-ft li a .fa-google-plus {
+            background-color: #dd4b39; }
+          .footer-section .heading-ft .detail-ft .social-list-ft li a .fa-vimeo {
+            background-color: #4EBBFF; }
+
+.copyright-bottom {
+  background: #000;
+  padding: 1rem 0;
+  color: #636363;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

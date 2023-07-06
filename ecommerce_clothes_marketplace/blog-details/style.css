@@ -1,0 +1,304 @@
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Template Name 	:  Feather
+	Version    		:  1.0
+	Author     		:  W3Engineers Ltd.
+	Author URI 		:  https://themeforest.net/user/w3engineers
+
+====================================================
+
+	TOC
+	
+	1. PRIMARY STYLES
+	2. COMMON STYLES
+		GO TOP 
+	3. MENU STYLING
+		LOGO 
+		MENU RIGHT AREA 
+		MAIN MENU 
+		DROPDOWN 
+		DROPDOWN MULTI LEVEL 
+		DROPDOWN HOVER EFFECT 
+		NAV ICON 
+		SEARCH AREA 
+		POP UP AREA 
+		SEARCH INPUT 
+		POP FROM LEFT
+		CART STYLING 
+	4. SLIDER STYLING
+	5. BLOG DETAILS
+		BLOG POST 
+		BLOG QUOTO 
+		BLOG FOOTER 
+		BLOG AUTHOR 
+	6. BLOG COMMENT
+		LEAVE REPLY AREA 
+	7. SIDEBAR STYLING
+		ABOUT 
+		NEWSLETTER 
+		TAGS 
+		RELATED POST
+		FOLLOW US 
+	8. FOOTER SECTION STYLING
+	
+==================================================
+	
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+2. COMMON STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+3. MENU STYLING
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+
+/* ---------------------------------
+4. SLIDER STYLING
+--------------------------------- */
+
+.main-slider{ height: 500px; margin-top: 80px; overflow: hidden; position: relative; color: #fff; }
+
+.main-slider .slider-bg{ position: absolute; top: 0px; bottom: 0; left: 0px; right: 0px; z-index: -3; 
+	background-size: cover; background-image: url(../images/slider-4-1920x1080.jpg); 
+	background-position: 40% center; }
+
+.main-slider .slider-bg:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -4; 
+	background: rgba(0,0,0,.3); }
+
+.main-slider .icon{ margin: 0 10px; -webkit-transform: translateY(2px); transform: translateY(2px); }
+
+.main-slider a:focus,
+.main-slider a:hover{ color: #ddd; }
+
+
+
+/* ---------------------------------
+5. BLOG DETAILS
+--------------------------------- */
+
+.blog-details i{ font-size: 1.1em; }
+
+.blog-section{ padding: 50px 0 20px; border-top: 1px solid #eee; }
+
+.blog-section ul.icons > li > a{ padding-right: 15px; }
+
+
+/* BLOG POST */
+
+.blog-desc .first-letter { float: left; font-size: 75px; line-height: 60px; padding: 4px 8px 0 3px; }
+
+
+/* BLOG QUOTO */
+
+.blog-desc .quoto{ line-height: 1.6; }
+
+.blog-desc .quoto .start-icon { display: inline-block; margin-right: 15px; color: #aaa; }
+
+.blog-desc .quoto .end-icon { display: inline-block; margin-left: 15px; color: #aaa; 
+	-webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+
+/* BLOG FOOTER */
+
+.blog-desc .blog-footer { overflow: hidden; padding: 30px 0 0; }
+
+.blog-desc .blog-footer ul.tags{ float: left; margin-bottom: 15px; }
+
+.blog-desc .blog-footer ul.tags > li > a { padding: 0px 15px; margin: 0 3px 7px 0; line-height: 30px; border: 1px solid #0aa0d9; }
+
+.blog-desc .blog-footer ul.tags > li > a:hover { background: none; }
+
+.blog-desc .blog-footer ul.icons{ float: right; }
+
+.blog-desc .blog-footer ul.icons > li > a { padding: 0; padding-left: 15px; line-height: 30px; }
+
+
+/* BLOG AUTHOR */
+
+.blog-author .author-image{ float: left; width: 100px; height: 100px; border-radius: 100px; overflow: hidden;  }
+
+.blog-author .author-info{ margin-left: 120px; }
+
+
+/* ---------------------------------
+6. BLOG COMMENT
+--------------------------------- */
+
+.comment .author-image{ float: left; width: 100px; height: 100px; border-radius: 100px; overflow: hidden; }
+
+.comment .author-info{ margin-left: 120px; }
+
+.author-info{ position: relative; }
+
+.author-info .reply-btn{ position: absolute; padding: 5px 12px; top: 10px; right: 20px; border-radius: 5px; 
+	font-size: .95em; background: #0aa0d9; color: #fff; }
+
+.author-info .reply-btn:hover{ background: #fdd921; color: #222; }
+
+.author-info i{ margin-right: 7px; }
+
+
+/* LEAVE REPLY AREA */
+
+.leave-reply-area{ padding-bottom: 0; }
+
+.leave-reply input { width: 100%; height: 45px; line-height: normal; padding: 0 20px; border: 1px solid #ccc; }
+
+.leave-reply textarea { width: 100%; max-width: 100%; padding: 20px; border: 1px solid #ccc; }
+
+.leave-reply button { text-align: center; height: 45px; width: 90%; line-height: 43px; border-radius: 2px; 
+	border: 1px solid #0c98cf; background: #0c98cf; color: #fff; }
+	
+.leave-reply button:hover { background: none; color: #222; }
+
+
+
+/* ---------------------------------
+7. SIDEBAR STYLING
+--------------------------------- */
+
+.sidebar{ padding: 30px 30px; background: #0aa0d9; color: #fff; }
+
+.sidebar p{ color: #fff; }
+
+.sidebar-section a:hover, .sidebar-section a:focus, .sidebar-section a:active,
+.sidebar-section button:hover, .sidebar-section button:focus, .sidebar-section button:active{ text-decoration: none; color: #ddd; }
+
+
+.sidebar-section{ overflow: hidden; }
+
+.sidebar-section .title{ margin-bottom: 30px; } 
+
+.sidebar-section ul > li{ display: block; }
+
+.sidebar-section ul > li > a{ padding-bottom: 10px; }
+
+.sidebar-section{ padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,.2); }
+
+.sidebar-section:last-child{ padding-bottom: 0px; margin-bottom: 0px; border-bottom: 0px; }
+
+
+/* ABOUT */
+
+.sidebar-section ul.icons > li{ display: inline-block; margin-right: 10px; }
+
+
+/* NEWSLETTER */
+
+.sidebar-section.subscribe .email-input { height: 45px; line-height: normal; width: 100%; padding: 0 20px; }
+
+.sidebar-section.subscribe .submit-btn { width: 100%; height: 45px; line-height: 43px; margin-top: 15px; 
+    border: 1px solid #fdd921; background: #fdd921; color: #000;
+	-webkit-transition: all .3s; transition: all .3s;  }
+	
+.sidebar-section.subscribe .submit-btn:hover { background: none; color: #000; }
+
+
+/* TAGS */
+
+.sidebar-section ul.tags > li > a { font-size: .9em; padding: 7px 10px; margin: 0 10px 10px 0; float: left; 
+	border: 1px solid rgba(255,255,255,.4); }
+
+.sidebar-section ul.tags > li > a:hover { background: none; }
+
+
+/* RELATED POST */
+
+.sidebar-section .related-post{ display: block; }
+
+.sidebar-section .related-post .p-name{ line-height: 1.4; }
+
+.sidebar-section .related-post .p-name:hover{ text-decoration: underline; }
+
+
+/* FOLLOW US */
+
+.sidebar-section ul.icons > li { margin-right: 15px; font-size: 1.1em; }
+
+
+/* ---------------------------------
+8. FOOTER SECTION STYLING
+--------------------------------- */
+
+/* common/footer-styles.css */
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	
+    /* ---------------------------------
+	4. SLIDER STYLING
+	--------------------------------- */
+	
+	.main-slider{ margin-top: 60px; height: 400px; }
+   
+   
+   /* ---------------------------------
+	4. BLOG DETAILS
+	--------------------------------- */
+
+	.blog-section{ padding-top: 30px; padding-bottom: 0px; }
+	
+	
+	/* ---------------------------------
+	7. SIDEBAR STYLING
+	--------------------------------- */
+
+	.sidebar{ margin: 20px 0 30px; }
+
+	
+}
+
+@media only screen and (max-width: 479px) {
+	
+	/* ---------------------------------
+	4. BLOG DETAILS
+	--------------------------------- */
+	
+	.blog-desc .blog-footer ul.icons > li > a { padding: 0; padding-right: 10px; }
+	
+	.blog-section ul.icons > li > a{ padding-right: 5px; }
+	
+	
+	/* BLOG FOOTER */
+	.blog-desc .blog-footer ul.tags{ float: none; }
+	
+	.blog-desc .blog-footer ul.icons{ margin-bottom: 20px; float: none; }
+	
+
+	/* BLOG AUTHOR */
+
+	.blog-author .author-image{ float: none; margin-bottom: 20px; }
+
+	.blog-author .author-info{ margin-left: 0px; }
+	
+	
+	/* ---------------------------------
+	6. BLOG COMMENT
+	--------------------------------- */
+
+	.comment .author-image{ float: none; margin-bottom: 15px; }
+
+	.comment .author-info{ margin-left: 0px; }
+	
+	.author-info .reply-btn{ position: static; }
+
+}

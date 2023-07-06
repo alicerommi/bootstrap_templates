@@ -1,0 +1,65 @@
+
+
+/* ---------------------------------
+*. FOOTER SECTION STYLING
+--------------------------------- */
+
+footer { padding: 80px 0 0px; font-size: .95em; background: #222; color: #ddd; }
+
+footer p{ color: #ccc; }
+
+footer ul > li > a{ padding: 5px; }
+
+footer ul.tags > li > a{ padding: 6px 12px; margin: 0 7px 10px 0; border-radius: 2px; border: 1px solid #555; }
+
+footer ul.imp-link > li{ display: block; }
+
+footer ul.imp-link > li > a:hover{ text-decoration: underline; }
+
+footer ul.social-icons > li:first-child{ margin-right: 15px; font-weight: 500; }
+
+footer .read-more-btn{ font-size: .9em; text-decoration: underline; }
+
+footer .read-more-btn:hover{ text-decoration: none; }
+
+footer .payment-options{ float: right; }
+
+footer .footer-top{ margin-bottom: 30px; }
+ 
+footer .footer-bottom{ padding-top: 20px; border-top: 1px solid #555; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	footer { padding: 50px 0 0px; }
+
+	footer .footer-top{ margin-bottom: 0px; }
+	
+	footer .payment-options{ float: left; }
+
+}
+
+@media only screen and (max-width: 479px) {
+	
+	footer .main-footer{ margin-bottom: 5px; }
+	
+	/* CONTACT AREA */
+	footer .footer-contact{ padding: 30px 20px 0px; }
+	footer .footer-contact .left-area{ font-size: 30px; }
+	footer .footer-contact .right-area{ margin-left: 40px; }
+
+	/* SOCIAL ICONS */
+	footer .footer-icons-wrapper .title,
+	footer ul.social-icons > li:first-child{ display: block; width: 100%; margin: 0px 0 15px 0; float: none; }
+	
+	footer .footer-icons-wrapper{ padding: 30px 20px; }
+	
+	footer .subscribe-form{ margin: 0; }
+	
+	footer .subscribe-form input{ padding: 0 80px 0 15px; }
+	
+	footer .subscribe-form button{ width: 75px; }
+
+}

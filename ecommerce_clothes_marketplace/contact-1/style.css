@@ -1,0 +1,115 @@
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Template Name 	:  Feather
+	Version    		:  1.0
+	Author     		:  W3Engineers Ltd.
+	Author URI 		:  https://themeforest.net/user/w3engineers
+
+====================================================
+
+	1. PRIMARY STYLES
+	2. COMMON STYLES
+		GO TOP 
+	3. MENU STYLING
+		LOGO 
+		MENU RIGHT AREA 
+		MAIN MENU 
+		DROPDOWN 
+		DROPDOWN MULTI LEVEL 
+		DROPDOWN HOVER EFFECT 
+		NAV ICON 
+		SEARCH AREA 
+		POP UP AREA 
+		SEARCH INPUT 
+		POP FROM LEFT 
+		CART STYLING 
+	4. SLIDER STYLING
+	5. CONTACT STYLING
+	6. FOOTER SECTION STYLING
+
+============================================
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+2. COMMON STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+3. MENU STYLING
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+4. SLIDER STYLING
+--------------------------------- */
+
+.main-slider{ height: 500px; margin-top: 80px; overflow: hidden; position: relative; color: #fff; }
+
+.main-slider .slider-bg{ position: absolute; top: 0px; bottom: 0; left: 0px; right: 0px; background-size: cover; 
+	z-index: -3; background-image: url(../images/slider-3-1920x1080.jpg); background-position: 40% center; }
+
+.main-slider .slider-bg:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -5; 
+	background: rgba(0,0,0,.3); }
+
+.main-slider .icon{ margin: 0 10px; -webkit-transform: translateY(2px); transform: translateY(2px); }
+
+.main-slider a:focus,
+.main-slider a:hover{ color: #ddd; }
+
+	
+/* ---------------------------------
+5. CONTACT STYLING
+--------------------------------- */
+
+.contact-info ul > li{ display: block; position: relative; line-height: 1.8; }
+
+.contact-info ul > li i{ position: absolute; font-size: 1.2em; color: #222; }
+
+.contact-info ul > li span{ padding-left: 30px; display: block; }
+
+
+.contact-form input,
+.contact-form textarea{ width: 100%; max-width: 100%; border-radius: 2px; outline: 0; border: 1px solid #ccc; }
+
+.contact-form input{ height: 45px; padding: 0 20px; }
+
+.contact-form textarea{ padding: 20px; }
+
+
+/* MAP STYLING */
+
+#map{ height: 500px; width: 100%; }
+
+
+/* ---------------------------------
+6. FOOTER SECTION STYLING
+--------------------------------- */
+
+/* common/footer-styles.css */
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+    /* ---------------------------------
+	4. SLIDER STYLING
+	--------------------------------- */
+	
+	.main-slider{ margin-top: 60px; height: 400px; }
+	
+}

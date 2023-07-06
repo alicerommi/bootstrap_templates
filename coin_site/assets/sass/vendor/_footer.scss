@@ -1,0 +1,169 @@
+// Footer Section
+.footer-section {
+  padding: 3rem 0;
+  margin: 0;
+  width: 100%;
+  background: $blacklg-color;
+  .about-ft {
+    .ft-logo {
+      width: 200px;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      padding-top: 2rem;
+      font-size: .90rem;
+      font-weight: 400;
+      font-family: $font-slack;
+      color: $gray2-color;
+      position: relative;
+      vertical-align: middle;
+      line-height: 25px;
+      text-align: left;
+    }
+  }
+  .ft-ablink {
+    .link-ab {
+      color: $gray2-color;
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: $font-slack;
+      position: relative;
+      vertical-align: center;
+      text-align: left;
+    }
+  }
+  .heading-ft {
+    h3 {
+      color: $white-color;
+      font-size: 1.30rem;
+      font-weight: 600;
+      font-family: $font-slack;
+      font-style: normal;
+      text-decoration: underline;
+      position: relative;
+      vertical-align: middle;
+      padding-bottom: 2rem;
+    }
+    .detail-ft {
+      padding-bottom: 15px;
+      .ft-line {
+        padding-bottom: 1.6rem;
+      }
+      .line-seperator {
+        border: 1px solid $gray3-color;
+      }
+      h5 {
+        color: $white-color;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: $font-slack;
+        position: relative;
+        vertical-align: middle;
+        line-height: 25px;
+      }
+      h6 {
+        color: $gray-color;
+        font-weight: 500;
+        font-family: $font-slack;
+        position: relative;
+        vertical-align: middle;
+        font-size: 14px;
+        i {
+          padding-right: 6px;
+          color: $gray3-color;
+        }
+      }
+      p {
+        color: $gray-color;
+        font-size: .90rem;
+        font-family: $font-slack;
+        font-weight: 400;
+        position: relative;
+        text-align: left;
+        vertical-align: middle;
+      }
+      small {
+        color: rgba(255, 255, 255, .8);
+        font-family: $font-slack;
+        font-weight: 500;
+        font-size: 13px;
+        position: relative;
+        vertical-align: middle;
+        img {
+          padding-right: 5px;
+        }
+      }
+      .add-details {
+        list-style-type: none;
+        li {
+          color: $gray-color;
+          font-size: .90rem;
+          font-family: $font-slack;
+          font-weight: 400;
+          position: relative;
+          text-align: left;
+          vertical-align: middle;
+          span {
+            font-size: .85rem;
+            font-family: $font-slack;
+            font-weight: 600;
+            position: relative;
+            text-align: left;
+            color: $white-color;
+            padding-right: 4px;
+          }
+        }
+      }
+      .social-list-ft {
+        list-style-type: none;
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        li {
+          margin-right: 15px;
+          a {
+            color: $white-color;
+            text-decoration: none;
+            i {
+              font-size: 15px;
+              border-radius: 50px;
+              width: 30px;
+              height: 30px;
+              display: block;
+              position: relative;
+              line-height: 30px;
+              text-align: center;
+            }
+            .fa-twitter {
+              background-color: #1da1f2;
+            }
+            .fa-facebook {
+              background-color: #3b5998;
+            }
+            .fa-google-plus {
+              background-color: #dd4b39;
+            }
+            .fa-vimeo {
+              background-color: #4EBBFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.copyright-bottom {
+  background: $black-color;
+  padding: 1rem 0;
+  color: $gray3-color;
+  font-size: 16px;
+  font-family: $font-slack;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}

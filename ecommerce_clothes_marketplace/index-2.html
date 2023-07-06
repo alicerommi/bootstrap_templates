@@ -1,0 +1,742 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from theme1.w3engineers.com/ecommerce-demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Mar 2018 20:34:40 GMT -->
+<head>
+<title>Feather - Responsive Ecommerce Template</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700%7CPoppins:400,500,600" rel="stylesheet">
+
+<!-- Ion Icons -->
+<link rel="stylesheet" href="fonts/ionicons.css">
+
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="plugin-frameworks/bootstrap.css">
+
+<!-- Swiper Slider -->
+<link rel="stylesheet" href="plugin-frameworks/swiper.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="common/primary-styles.css">
+<link rel="stylesheet" href="common/header-styles.css">
+
+<link rel="stylesheet" href="index/style.css">
+
+<link rel="stylesheet" href="common/footer-styles.css">
+
+</head>
+<body>
+	
+	<div class="page-loader">
+		<div class="spinner">
+			<div class="page-loader">
+			  <div class="ball ball-1"></div>
+			  <div class="ball ball-2"></div>
+			  <div class="ball ball-3"></div>
+			  <div class="ball ball-4"></div>
+			</div>
+		</div><!-- spinner -->
+	</div><!-- page-loader -->
+
+	<a href="#" id="back-to-top"><i class="ion-android-arrow-up"></i></a>
+	<div class="dark-bg"></div>
+	
+	<div class="pop-up-area visible-on-click" id="src-pop-up">
+		<a class="close-btn" data-close="#src-pop-up" href="#"><i class="ion-android-close"></i></a>
+		<form>
+			<div class="src-input-area">
+				<input class="src-input" type="text" placeholder="Search">
+				<button class="src-btn" type="submit"><i class="src-icon ion-ios-arrow-thin-right"></i></button>
+			</div><!-- src-input-area -->
+		</form>
+	</div><!-- pop-up-area -->
+	
+	<div class="pop-from-left " id="cart-pop-left">
+		<div class="cart-header">
+			<h5 class="title">Cart</h5>
+			<a class="close-btn" data-close="#cart-pop-left" href="#">Close<i class="ion-android-close"></i></a>
+		</div>
+		<div class="cart">
+			<p class="no-item">No items yet</p>
+			<div id="cart-product-list">
+				
+			</div><!-- cart-product-list -->
+			
+			<h5 class="total-price">
+				<span>Subtotal</span>
+				<span class="float-right">
+					$<span class="subtotal">0</span>
+				</span>
+			</h5>
+			<a class="btn cart-btn" href="#"><b>VIEW CART</b></a>
+			<a class="btn checkout-btn" href="#"><b>CHECKOUT</b></a>
+			
+		</div><!-- cart -->
+	</div><!-- pop-from-left -->
+	
+	<header class="fixed-on-scroll">
+		<div class="container-fluid position-relative">
+			<div class="row">
+				<div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+					
+					<div class="menu-left-area">
+						<a href="index-2.html" class="logo"><img class="logo-big" src="images/logo-black.png" alt="Logo Image"></a>
+					</div>
+					
+					<div class="menu-right-area">
+						<ul>
+							<li><a data-popup="#src-pop-up" href="#"><i class="ion-android-search"></i></a></li>
+							<li class="view-cart"><a data-popup="#cart-pop-left" href="#"><i class="ion-ios-cart-outline"></i><span id="added-item">0</span></a></li>
+						</ul>
+					</div><!-- menu-right-area -->
+					
+					<div class="menu-nav-icon" data-menu-visible="#main-menu"><i class="ion-navicon"></i></div>
+					
+					<ul class="nav-visible main-menu" id="main-menu">
+						
+						<li><a href="#">HOME <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li class="active"><a href="index-2.html">HOME</a></li>
+								<li><a href="index-3.html">HOME 2</a></li>
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="#">PRODUCT LIST <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li><a href="product-list-left-sidebar.html">LEFT SIDEBAR</a></li>
+								<li><a href="product-list.html">RIGHT SIDEBAR</a></li>
+								<li><a href="product-list-top-sidebar.html">TOP SIDEBAR</a></li>
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="#">PAGES <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li><a href="product-details.html">PRODUCT DETAIL</a></li>
+								<li><a href="about-1.html">ABOUT</a></li>
+								<li><a href="contact-1.html">CONTACT</a></li>
+								
+								<li><a href="#">BLOG <i class="ion-android-arrow-dropright"></i></a>
+									<ul class="drop-down-lower">
+										<li><a href="blog.html">BLOG PAGE</a></li>
+										<li><a href="blog-details.html">BLOG DETAIL</a></li>
+									</ul><!-- drop-down-lower -->
+								</li>
+								
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="#">BLOG <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li><a href="blog.html">BLOG</a></li>
+								<li><a href="blog-details.html">BLOG DETAIL</a></li>
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="about-1.html">ABOUT US</a></li>
+						
+					</ul><!-- main-menu -->
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- conatiner -->
+	</header>
+	
+	<section class="main-slider">
+		<div id="bs-carousel" class="carousel slide carousel-fade full-height" data-ride="carousel">
+			
+			<ol class="carousel-indicators">
+				<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#bs-carousel" data-slide-to="1"></li>
+				<li data-target="#bs-carousel" data-slide-to="2"></li>
+			</ol>
+			
+			<div class="carousel-inner full-height">
+			
+				<div class="item full-height center-text">
+					<div class="slider-content">
+						<div class="slider-bg bg-1"></div>
+						
+						<div class="display-table">
+							<div class="display-table-cell">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-10 col-sm-offset-1">
+											
+											<h1 class="title"><b class="max-bold">Nail The Summer Style</b></h1>
+											<h4 class="desc">Discover the latest summer collection</h4>
+											<a class="carousel-btn" href="product-list.html"><b class="max-bold">SHOP NOW</b></a>	
+											
+										</div><!-- col-sm-10 -->
+									</div><!-- row -->
+								</div><!-- container -->
+							</div><!-- display-table-cell -->
+						</div><!-- display-table -->
+						
+					</div><!-- slider-content -->
+				</div><!-- item -->
+				
+				<div class="item full-height center-text">
+					<div class="slider-content">
+						<div class="slider-bg bg-2"></div>
+						
+						<div class="display-table">
+							<div class="display-table-cell">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-10 col-sm-offset-1">
+											
+											<h1 class="title"><b class="max-bold">Take on the World Style</b></h1>
+											<h4 class="desc">Discover the latest collection</h4>
+											<a class="carousel-btn" href="product-list.html"><b class="max-bold">SHOP NOW</b></a>	
+
+										</div><!-- col-sm-7 -->
+									</div><!-- row -->
+								</div><!-- container -->
+							</div><!-- display-table-cell -->
+						</div><!-- display-table -->
+						
+					</div><!-- slider-content -->
+				</div><!-- item -->
+				
+				<div class="active item full-height center-text">
+					<div class="slider-content">
+						<div class="slider-bg bg-3"></div>
+						
+						<div class="display-table">
+							<div class="display-table-cell">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-10 col-sm-offset-1">
+											
+											<h1 class="title"><b class="max-bold">Introducing Women Collection</b></h1>
+											<h4 class="desc">Discover the latest women collection</h4>
+											<a class="carousel-btn" href="product-list.html"><b class="max-bold">SHOP NOW</b></a>	
+											
+										</div><!-- col-sm-12 -->
+									</div><!-- row -->
+								</div><!-- container -->
+							</div><!-- display-table-cell -->
+						</div><!-- display-table -->
+						
+					</div><!-- slider-content -->
+				</div><!-- item -->
+				
+			</div><!-- carousel-inner -->
+			
+			<a class="carousel-control left" href="#bs-carousel" data-slide="prev"><i class="ion-ios-arrow-thin-left"></i></a>
+			<a class="carousel-control right" href="#bs-carousel" data-slide="next"><i class="ion-ios-arrow-thin-right"></i></a>
+		</div><!-- carousel -->
+		
+		<div class="intro-section">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-sm-12">
+						<div class="intro">
+						
+							<div class="left-area">
+								<h3><b>The shop template you are waiting for</b></h3>
+								<h5 class="para"> Walk-through and enjoy the visuals.</h5>
+							</div><!-- left-area -->
+							
+							<div class="right-area">
+								<div class="display-table">
+									<div class="display-table-cell">
+										<a class="btn join-btn" href="#"><b>JOIN OUR NEWSLETTER</b></a>
+										<a class="btn" href="#"><b>BUY NOW</b></a>
+									</div><!-- display-table-cell -->
+								</div><!-- display-table -->
+							</div><!-- right-area -->
+							
+						</div><!-- intro -->
+					</div><!-- col-sm-12 -->
+					
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- intro-section -->
+		
+	</section><!-- main-slider -->
+	
+	
+	<section class="featured-products section">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-12">
+					<div class="heading center-text">
+						<h6 class="pre-heading">CHOOSE FROM OUR FEATURED PRODUCTS</h6>
+						<h2><b>Featured Products</b></h2>
+					</div>
+				</div><!-- col-sm-12 -->
+				
+				<div class="col-sm-6">
+					<div class="product left" data-product="1">
+						
+						<div class="product-wrapper">
+							<div class="product-image" data-paralax-scroll="true">
+								<a class="image-wrapper" href="product-details.html"><img src="images/product-1-700x900.jpg" alt="Product Image"></a>
+								<h6><a class="btn" href="#">SHOP NOW</a></h6>
+								
+								<input name="quantity" type="hidden" value="1" />
+								
+								<div class="top"></div>
+								<div class="bottom"></div>
+								<div class="left"></div>
+								<div class="right"></div>
+							</div><!-- image-wrapper -->
+							
+							<div class="product-info">
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="p-price">$ <span class="price">123</span></h5>
+							</div><!-- product-info -->
+							
+						</div><!-- product-wrapper -->
+					</div><!-- product -->
+				</div><!-- col-sm-6 -->
+				
+				<div class="col-sm-6">
+					<div class="product right" data-product="1">
+						
+						<div class="product-wrapper">
+							<div class="product-image" data-paralax-scroll="true">
+								<a class="image-wrapper" href="product-details.html"><img src="images/product-2-700x900.jpg" alt="Product Image"></a>
+								<h6><a class="btn" href="#">SHOP NOW</a></h6>
+								
+								<input name="quantity" type="hidden" value="1" />
+								
+								<div class="top"></div>
+								<div class="bottom"></div>
+								<div class="left"></div>
+								<div class="right"></div>
+							</div><!-- image-wrapper -->
+							
+							<div class="product-info">
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="p-price">$ <span class="price">123</span></h5>
+							</div><!-- product-info -->
+							
+						</div><!-- product-wrapper -->
+					</div><!-- product -->
+				</div><!-- col-sm-6 -->
+				
+				<div class="col-sm-6">
+					<div class="product left" data-product="1">
+						
+						<div class="product-wrapper">
+							<div class="product-image" data-paralax-scroll="true">
+								<a class="image-wrapper" href="product-details.html"><img src="images/product-3-700x900.jpg" alt="Product Image"></a>
+								<h6><a class="btn" href="#">SHOP NOW</a></h6>
+								
+								<input name="quantity" type="hidden" value="1" />
+								
+								<div class="top"></div>
+								<div class="bottom"></div>
+								<div class="left"></div>
+								<div class="right"></div>
+							</div><!-- image-wrapper -->
+							
+							<div class="product-info">
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="p-price">$ <span class="price">123</span></h5>
+							</div><!-- product-info -->
+							
+						</div><!-- product-wrapper -->
+					</div><!-- product -->
+				</div><!-- col-sm-6 -->
+				
+				<div class="col-sm-6">
+					<div class="product right" data-product="1">
+						
+						<div class="product-wrapper">
+							<div class="product-image" data-paralax-scroll="true">
+								<a class="image-wrapper" href="product-details.html"><img src="images/product-4-700x900.jpg" alt="Product Image"></a>
+								<h6><a class="btn" href="#">SHOP NOW</a></h6>
+								
+								<input name="quantity" type="hidden" value="1" />
+								
+								<div class="top"></div>
+								<div class="bottom"></div>
+								<div class="left"></div>
+								<div class="right"></div>
+							</div><!-- image-wrapper -->
+							
+							<div class="product-info">
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="p-price">$ <span class="price">123</span></h5>
+							</div><!-- product-info -->
+							
+						</div><!-- product-wrapper -->
+					</div><!-- product -->
+				</div><!-- col-sm-6 -->
+				
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- featured-products -->
+	
+	
+	<section class="popular-products section">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-12">
+					<div class="heading center-text">
+						<h6 class="pre-heading">CHOOSE FROM OUR MOST POPULAR PRODUCTS</h6>
+						<h2><b>Popular Products</b></h2>
+					</div>
+				</div><!-- col-sm-12 -->
+				
+				<div class="col-sm-12">
+					<div class="swiper-container" data-slide-effect="slide" data-autoheight="false" data-swpr-speed="500"
+						data-swpr-autoplay="10000" data-swpr-slides-per-view="4" data-swpr-margin="30"  
+						data-swpr-breakpoints="true" data-swpr-loop="true">
+						<div class="swiper-wrapper">
+							
+							<div class="swiper-slide">
+								<div class="product" data-product="1">
+						
+									<div class="product-info">
+										<a class="product-image" href="#"><img src="images/popular-1-400x500.jpg" alt=""></a>
+										
+										<ul class="icons">
+											<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+											<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+											<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+										</ul>
+									</div><!-- product-info -->	
+									
+									<input class="quantity" name="quantity" type="hidden" value="1" />
+									<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+									<h5 class="price-wrapper">$<span class="price">123</span></h5>
+										
+								</div><!-- product -->	
+							</div><!-- swiper-slide -->			
+							
+							<div class="swiper-slide">
+								<div class="product" data-product="1">
+						
+									<div class="product-info">
+										<a class="product-image" href="#"><img src="images/popular-2-400x500.jpg" alt=""></a>
+										
+										<ul class="icons">
+											<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+											<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+											<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+										</ul>
+									</div><!-- product-info -->	
+									
+									<input class="quantity" name="quantity" type="hidden" value="1" />
+									<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+									<h5 class="price-wrapper">$<span class="price">123</span></h5>
+										
+								</div><!-- product -->	
+							</div><!-- swiper-slide -->	
+							
+							<div class="swiper-slide">
+								<div class="product" data-product="1">
+						
+									<div class="product-info">
+										<a class="product-image" href="#"><img src="images/popular-3-400x500.jpg" alt=""></a>
+										
+										<ul class="icons">
+											<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+											<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+											<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+										</ul>
+									</div><!-- product-info -->	
+									
+									<input class="quantity" name="quantity" type="hidden" value="1" />
+									<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+									<h5 class="price-wrapper">$<span class="price">123</span></h5>
+										
+								</div><!-- product -->	
+							</div><!-- swiper-slide -->	
+							
+							<div class="swiper-slide">
+								<div class="product" data-product="1">
+						
+									<div class="product-info">
+										<a class="product-image" href="#"><img src="images/popular-4-400x500.jpg" alt=""></a>
+										
+										<ul class="icons">
+											<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+											<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+											<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+										</ul>
+									</div><!-- product-info -->	
+									
+									<input class="quantity" name="quantity" type="hidden" value="1" />
+									<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+									<h5 class="price-wrapper">$<span class="price">123</span></h5>
+										
+								</div><!-- product -->	
+							</div><!-- swiper-slide -->	
+							
+						</div><!-- swiper-wrapper -->	
+						
+						<div class="swpr-control" >
+							<div class="swiper-button-prev"><i class="ion-ios-arrow-thin-left"></i></div>
+							<div class="swiper-button-next"><i class="ion-ios-arrow-thin-right"></i></div>
+						</div>
+						
+					</div><!-- swiper-container -->
+				</div><!-- col-sm-12 -->
+				
+			</div><!-- row -->
+			
+			<div class="center-text margin-tb-30"><a class="view-all-btn" href="#">View all products</a></div>
+			
+		</div><!-- conatiner -->
+	</section><!-- popular-products -->
+	
+	
+	<section class="popular-category section">
+		<div class="container">
+			
+			<div class="heading center-text">
+				<h6 class="pre-heading font-lite-balck">CHOOSE FROM OUR POPULAR CATEGORY</h6>
+				<h2><b>Top Collections</b></h2>
+			</div>
+			
+			<div class="category-area grid">
+				
+				<div class="grid-item"><a class="category" href="product-list.html"><img src="images/category-1-400x400.jpg" alt="">
+					<h5 class="title">Dresses<i class="icon ion-ios-arrow-thin-right"></i></h5>
+				</a></div>
+				
+				<div class="grid-item"><a class="category" href="product-list.html"><img src="images/category-2-400x400.jpg" alt="">
+					<h5 class="title">Shoes<i class="icon ion-ios-arrow-thin-right"></i></h5>
+				</a></div>
+				
+				<div class="grid-item"><a class="category" href="product-list.html"><img src="images/category-3-400x400.jpg" alt="">
+					<h5 class="title">Grooming<i class="icon ion-ios-arrow-thin-right"></i></h5>
+				</a></div>
+				
+				<div class="grid-item grid-item--width2"><a class="category" href="product-list.html"><img src="images/category-5-800x800.jpg" alt="">
+					<h5 class="title">Men Clothing<i class="icon ion-ios-arrow-thin-right"></i></h5>
+				</a></div>
+				
+				<div class="grid-item"><a class="category" href="product-list.html"><img src="images/category-4-400x400.jpg" alt="">
+					<h5 class="title">Sport Wear<i class="icon ion-ios-arrow-thin-right"></i></h5>
+				</a></div>
+				
+				<div class="grid-item"><a class="category" href="product-list.html"><img src="images/category-6-400x400.jpg" alt="">
+					<h5 class="title">Watches<i class="icon ion-ios-arrow-thin-right"></i></h5>
+				</a></div>
+				
+			</div><!-- category-area -->
+
+		</div><!-- conatiner -->
+	</section><!-- popular-category -->
+	
+	<section class="testimonial-section section center-text">
+		<div class="container">
+			<div class="row">
+				
+				<div class="heading">
+					<h6 class="pre-heading font-blue">WHAT OUR CLIENT SAYING</h6>
+					<h2><b>Testimonials</b></h2>
+				</div>
+				
+				<div class="col-sm-12">
+					<div class="swiper-container" data-slide-effect="fade" data-autoheight="false" data-swpr-speed="500"
+						data-swpr-autoplay="10000" data-swpr-slides-per-view="1" data-swpr-margin="0"
+						data-swpr-breakpoints="false" data-swpr-loop="true" data-swpr-crossfade="true">
+						<div class="swiper-wrapper">
+							
+							<div class="swiper-slide">
+								<div class="testimonial ">
+									<div class="profile-image"><img src="images/team-1-350x400.jpg" alt=""></div>
+									<p class="margin-tb-30 quoto">
+										Lngues es membres del sam familie. Lor separat existentie es un myth. 
+										Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe 
+										solmen in li grammatica, li pronunciation e li plu commun vocabules.</p>
+									<div class="author-info">
+										<h5 class="margin-bottom-5">Ferid Kazim</h5>
+										<h6 class="font-blue">Manager</h6>
+									</div>
+								</div><!-- testimonial -->
+							</div><!-- swiper-slide-->
+							
+							<div class="swiper-slide">
+								<div class="testimonial ">
+									<div class="profile-image"><img src="images/team-2-350x400.jpg" alt=""></div>
+									<p class="margin-tb-30 quoto">
+										
+										Li Europan lingues es membres del sam familie. Lor es un myth. 
+										Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe 
+										solmen in li grammatica, li pronunciation e li plu commun vocabules.</p>
+									<div class="author-info">
+										<h5 class="margin-bottom-5">John Doe</h5>
+										<h6 class="font-blue">Project Manager</h6>
+									</div>
+								</div><!-- testimonial -->
+							</div><!-- swiper-slide-->
+							
+							<div class="swiper-slide">
+								<div class="testimonial ">
+									<div class="profile-image"><img src="images/team-3-350x400.jpg" alt=""></div>
+									<p class="margin-tb-30 quoto">
+										Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. 
+										Por, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe 
+										solmen in li grammatica, li pronunciation e li plu commun vocabules.</p>
+									<div class="author-info">
+										<h5 class="margin-bottom-5">Ferid Kazim</h5>
+										<h6 class="font-blue">CEO</h6>
+									</div>
+								</div><!-- testimonial -->
+							</div><!-- swiper-slide-->
+							
+						</div><!-- swiper-wrapper -->
+						
+						<div class="swpr-control" >
+							<div class="swiper-button-prev"><i class="ion-ios-arrow-thin-left"></i></div>
+							<div class="swiper-button-next"><i class="ion-ios-arrow-thin-right"></i></div>
+						</div>
+						
+					</div><!-- swiper-container -->
+				</div><!-- col-sm-12 -->	
+				
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- testimonial-section -->
+	
+	
+	<div class="partners-section">
+		<div class="container">
+		
+			<a class="partner" href="#"><img src="images/partner-1-300x150.jpg" alt=""></a>
+		
+			<a class="partner" href="#"><img src="images/partner-2-300x150.jpg" alt=""></a>
+		
+			<a class="partner" href="#"><img src="images/partner-3-300x150.jpg" alt=""></a>
+		
+			<a class="partner" href="#"><img src="images/partner-4-300x150.jpg" alt=""></a>
+		
+			<a class="partner" href="#"><img src="images/partner-5-300x150.jpg" alt=""></a>
+		
+		</div><!-- conatiner -->
+	</div><!-- partners-section -->
+
+	
+	<section class="newsletter-section center-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-offset-2 col-sm-8">
+				
+					<h2><b class="max-bold">Join our newsletter save 10%</b></h2>
+					<h4 class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+				
+				</div><!-- col-sm-10 -->
+				<div class="col-sm-offset-3 col-sm-6">
+				
+					<form method="post">
+						<div class="newsletter-area">
+							<input class="email-input" name="email" type="email" placeholder="Enter your email" required />
+							<button class="submit-btn" type="submit"><i class="ion-ios-arrow-thin-right"></i></button>
+						</div><!-- input-area -->
+					</form>
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- conatiner -->
+	</section><!-- newsletter-section -->
+
+	
+	<footer>
+		<div class="container">
+		
+			<div class="footer-top">
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="margin-bottom-30">
+							<h4 class="margin-bottom-20">About us</h4>
+							<p class="margin-tb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+								Lorem Ipsum has been the industry's.</p>
+							<a class="read-more-btn" href="about-1.html"><b>READ MORE</b></a>
+							<ul class="social-icons margin-top-30">	
+								<li>Follow us on</li>
+								<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+								<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+								<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+								<li><a href="#"><i class="ion-social-rss"></i></a></li>
+							</ul><!-- social-icons -->
+						</div><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="col-sm-6 col-md-2">
+						<h4 class="margin-bottom-20">Information</h4>
+						<ul class="imp-link margin-bottom-30">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Partners</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="clearfix hidden-xs hidden-md hidden-lg"></div>
+					
+					<div class="col-sm-6 col-md-3">
+						<h4 class="margin-bottom-20">Customer Service</h4>
+						<ul class="imp-link margin-bottom-30">
+							<li><a href="#">Shipping Policy</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Returns & Refunds</a></li>
+							<li><a href="#">Online Stores</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="col-sm-6 col-md-3">
+						<h4 class="margin-bottom-20">Tags</h4>
+						<ul class="tags margin-bottom-30">
+							<li><a href="#">Laptop</a></li>
+							<li><a href="#">Men</a></li>
+							<li><a href="#">Women</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Fashion</a></li>
+							<li><a href="#">Shirt</a></li>
+							<li><a href="#">Accesories</a></li>
+						</ul><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+				</div><!-- row -->
+			</div><!-- footer-top -->
+			
+			<div class="footer-bottom">
+				<div class="row">
+					<div class="col-sm-6">
+						<p class="copyright light-text margin-bottom-20">&copy; 2018 all rights reserved w3engineers.com</p>
+					</div><!-- col-sm-6 -->
+					
+					<div class="col-sm-6">
+						<a class="payment-options margin-bottom-20" href="#"><img src="images/payment-icon.png" alt=""></a>
+					</div><!-- col-sm-6 -->
+				</div><!-- row -->
+				
+			</div><!-- footer-bottom -->
+		</div><!-- conatiner -->
+	</footer>
+	
+<!-- jQuery library -->
+<script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="plugin-frameworks/bootstrap.min.js"></script>
+
+<!-- Swiper Slider -->
+<script src="plugin-frameworks/swiper.min.js"></script>
+
+<!-- Masonary -->
+<script src="plugin-frameworks/masonry.pkgd.min.js"></script>
+
+<!-- Jquery Visible -->
+<script src="plugin-frameworks/jquery.visible.min.js"></script>
+
+<!-- Main Script -->
+<script src="common/script.js"></script>
+
+</body>
+
+<!-- Mirrored from theme1.w3engineers.com/ecommerce-demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Mar 2018 20:34:40 GMT -->
+</html>

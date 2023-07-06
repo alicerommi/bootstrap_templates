@@ -1,0 +1,539 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from theme1.w3engineers.com/ecommerce-demo/product-list-top-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Mar 2018 20:35:21 GMT -->
+<head>
+<title>Feather - Responsive Ecommerce Template</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+
+<!-- Ion Icons -->
+<link rel="stylesheet" href="fonts/ionicons.css">
+
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="plugin-frameworks/bootstrap.css">
+
+<!-- Swiper Slider -->
+<link rel="stylesheet" href="plugin-frameworks/jquery-ui.min.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="common/primary-styles.css">
+<link rel="stylesheet" href="common/header-styles.css">
+
+<link rel="stylesheet" href="product-list-top-sidebar/style.css">
+
+<link rel="stylesheet" href="common/footer-styles.css">
+
+</head>
+<body>
+	
+	<div class="page-loader">
+		<div class="spinner">
+			<div class="page-loader">
+			  <div class="ball ball-1"></div>
+			  <div class="ball ball-2"></div>
+			  <div class="ball ball-3"></div>
+			  <div class="ball ball-4"></div>
+			</div>
+		</div><!-- spinner -->
+	</div><!-- page-loader -->
+
+	<a href="#" id="back-to-top"><i class="ion-android-arrow-up"></i></a>
+	<div class="dark-bg"></div>
+	
+	<div class="pop-up-area visible-on-click" id="src-pop-up">
+		<a class="close-btn" data-close="#src-pop-up" href="#"><i class="ion-android-close"></i></a>
+		<form>
+			<div class="src-input-area">
+				<input class="src-input" type="text" placeholder="Search">
+				<button class="src-btn" type="submit"><i class="src-icon ion-ios-arrow-thin-right"></i></button>
+			</div><!-- src-input-area -->
+		</form>
+	</div><!-- pop-up-area -->
+	
+	<div class="pop-from-left " id="cart-pop-left">
+		<div class="cart-header">
+			<h5 class="title">Cart</h5>
+			<a class="close-btn" data-close="#cart-pop-left" href="#">Close<i class="ion-android-close"></i></a>
+		</div>
+		<div class="cart">
+			<p class="no-item">No items yet</p>
+			<div id="cart-product-list">
+				
+			</div><!-- cart-product-list -->
+			
+			<h5 class="total-price">
+				<span>Subtotal</span>
+				<span class="float-right">
+					$<span class="subtotal">0</span>
+				</span>
+			</h5>
+			<a class="btn cart-btn" href="#"><b>VIEW CART</b></a>
+			<a class="btn checkout-btn" href="#"><b>CHECKOUT</b></a>
+			
+		</div><!-- cart -->
+	</div><!-- pop-from-left -->
+	
+	<header class="fixed-on-scroll">
+		<div class="container-fluid position-relative">
+			<div class="row">
+				<div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+					
+					<div class="menu-left-area">
+						<a href="index-2.html" class="logo"><img class="logo-big" src="images/logo-black.png" alt="Logo Image"></a>
+					</div>
+					
+					<div class="menu-right-area">
+						<ul>
+							<li><a data-popup="#src-pop-up" href="#"><i class="ion-android-search"></i></a></li>
+							<li><a data-popup="#cart-pop-left" href="#"><i class="ion-ios-cart-outline"></i><span id="added-item">0</span></a></li>
+						</ul>
+					</div><!-- menu-right-area -->
+					
+					<div class="menu-nav-icon" data-menu-visible="#main-menu"><i class="ion-navicon"></i></div>
+					
+					<ul class="nav-visible main-menu" id="main-menu">
+						
+						<li><a href="#">HOME <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li><a href="index-2.html">HOME</a></li>
+								<li><a href="index-3.html">HOME 2</a></li>
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="#">PRODUCT LIST <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li><a href="product-list-left-sidebar.html">LEFT SIDEBAR</a></li>
+								<li><a href="product-list.html">RIGHT SIDEBAR</a></li>
+								<li class="active"><a href="product-list-top-sidebar.html">TOP SIDEBAR</a></li>
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="#">PAGES <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li><a href="product-details.html">PRODUCT DETAIL</a></li>
+								<li><a href="about-1.html">ABOUT</a></li>
+								<li><a href="contact-1.html">CONTACT</a></li>
+								
+								<li><a href="#">BLOG <i class="ion-android-arrow-dropright"></i></a>
+									<ul class="drop-down-lower">
+										<li><a href="blog.html">BLOG PAGE</a></li>
+										<li><a href="blog-details.html">BLOG DETAIL</a></li>
+									</ul><!-- drop-down-lower -->
+								</li>
+								
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="#">BLOG <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li><a href="blog.html">BLOG</a></li>
+								<li><a href="blog-details.html">BLOG DETAIL</a></li>
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="about-1.html">ABOUT US</a></li>
+						
+					</ul><!-- main-menu -->
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- conatiner -->
+	</header>
+
+	
+	<section class="main-slider center-text">
+		<div class="slider-bg"></div>
+		<div class="display-table">
+			<div class="display-table-cell">
+				<h2><b class="max-bold">Product list</b></h2>
+				<h5 class="margin-top-10"><a href="index-2.html">Home</a><i class="icon ion-ios-arrow-forward"></i>
+					<a href="#">Product list</a></h5>
+			</div><!-- display-table-cell -->
+		</div><!-- display-table -->
+	</section><!-- main-slider -->
+	
+	
+	<section class="product-list section">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-12">
+					<div class="sidebar margin-bottom-30">
+						<div class="row">
+				
+							<div class="col-sm-3 col-md-2">
+								<div class="sidebar-section">
+									<h4 class="margin-bottom-30"><b>Categories</b></h4>
+									<ul>
+										<li><a href="#">Men Clothing</a></li>
+										<li><a href="#">Women Clothing</a></li>
+										<li><a href="#">Handbags</a></li>
+										<li><a href="#">Shoes</a></li>
+										<li><a href="#">Sport Wear</a></li>
+										<li><a href="#">Watches</a></li>
+									</ul>
+								</div><!-- sidebar-section -->
+							</div><!-- col-sm-3 -->
+							
+							<div class="col-sm-3 col-md-3">
+								<div class="price-range-section sidebar-section">
+									<h4 class="margin-bottom-30"><b>Filter</b></h4>
+									<form method="post" class="range-wrapper">
+										<div id="slider-range"></div>
+										<p class="price-range margin-top-10 margin-bottom-20">
+											<label class="range-text" for="amount">Price range:</label>
+											<input type="text" id="amount" readonly>
+										</p>
+										<button class="submit-btn" type="submit">FILTER</button>
+									</form>
+								</div><!-- sidebar-section -->
+							
+							</div><!-- col-sm-3 -->
+							<div class="col-sm-3 col-md-2 col-md-offset-1">
+								<div class="sidebar-section">
+									<h4 class="margin-bottom-30"><b>Size</b></h4>
+									<ul>
+										<li><a href="#">XXL</a></li>
+										<li><a href="#">XL</a></li>
+										<li><a href="#">L</a></li>
+										<li><a href="#">M</a></li>
+										<li><a href="#">S</a></li>
+									</ul>
+								</div><!-- sidebar-section -->
+							
+							</div><!-- col-sm-3 -->
+							<div class="col-sm-3">
+								<div class="sidebar-section">
+									<h4 class="margin-bottom-30"><b>Colors</b></h4>
+									<ul class="filter-color">
+										<li><a href="#"><span style="background-color: #ff4747;"></span>RED</a></li>
+										<li><a href="#"><span style="background-color: #10bee3;"></span>BLUE</a></li>
+										<li><a href="#"><span style="background-color: #7abe68;"></span>GREEN</a></li>
+										<li><a href="#"><span style="background-color: #f3cc2e;"></span>YELLOW</a></li>
+										<li><a href="#"><span style="background-color: white; border: 1px solid #ccc;"></span>WHITE</a></li>
+										<li><a href="#"><span style="background-color: black;"></span>BLACK</a></li>
+									</ul>
+								</div><!-- sidebar-section -->
+							</div><!-- col-sm-3 -->
+							
+						</div><!-- row -->
+					</div><!-- sidebar -->
+				</div><!-- col-sm-12 -->
+				
+				<div class="col-sm-12">
+					<div class="row">
+					
+						<div class="col-sm-12">
+							<div class="list-heading margin-bottom-30">
+								<div class="left-area"><h6>Showing 15 of 897</h6></div>
+								<div class="right-area">
+									
+									<!-- <a href="#"><i class="ion-ios-keypad-outline"></i></a> -->
+									<!-- <a href="#"><i class="ion-navicon"></i></a> -->
+									
+									<select class="sort">
+										<option>Sort by</option>
+										<option>Sort by Price</option>
+										<option>Sort by Popularity</option>
+										<option>Sort by Avg rating</option>
+										<option>Sort by Newest</option>
+									</select>
+									
+								</div>
+							</div><!-- list-heading -->	
+						</div><!-- col-sm-12 -->	
+						
+						<div class="col-sm-6 col-md-4">
+							<div class="product" data-product="1">
+						
+								<div class="product-info">
+									<a class="product-image" href="#"><img src="images/popular-1-400x500.jpg" alt=""></a>
+									
+									<ul class="icons">
+										<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+										<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+										<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+									</ul>
+								</div><!-- product-info -->	
+								
+								<input class="quantity" name="quantity" type="hidden" value="1" />
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="price-wrapper">$<span class="price">123</span></h5>
+									
+							</div><!-- product -->	
+						</div><!-- col-sm-4 -->	
+						
+						<div class="col-sm-6 col-md-4">
+							<div class="product" data-product="1">
+						
+								<div class="product-info">
+									<a class="product-image" href="#"><img src="images/popular-2-400x500.jpg" alt=""></a>
+									
+									<ul class="icons">
+										<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+										<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+										<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+									</ul>
+								</div><!-- product-info -->	
+								
+								<input class="quantity" name="quantity" type="hidden" value="1" />
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="price-wrapper">$<span class="price">123</span></h5>
+									
+							</div><!-- product -->	
+						</div><!-- col-sm-4 -->	
+						
+						<div class="col-sm-6 col-md-4">
+							<div class="product" data-product="1">
+						
+								<div class="product-info">
+									<a class="product-image" href="#"><img src="images/popular-3-400x500.jpg" alt=""></a>
+									
+									<ul class="icons">
+										<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+										<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+										<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+									</ul>
+								</div><!-- product-info -->	
+								
+								<input class="quantity" name="quantity" type="hidden" value="1" />
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="price-wrapper">$<span class="price">123</span></h5>
+									
+							</div><!-- product -->	
+						</div><!-- col-sm-4 -->	
+						
+						<div class="col-sm-6 col-md-4">
+							<div class="product" data-product="1">
+						
+								<div class="product-info">
+									<a class="product-image" href="#"><img src="images/popular-4-400x500.jpg" alt=""></a>
+									
+									<ul class="icons">
+										<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+										<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+										<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+									</ul>
+								</div><!-- product-info -->	
+								
+								<input class="quantity" name="quantity" type="hidden" value="1" />
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="price-wrapper">$<span class="price">123</span></h5>
+									
+							</div><!-- product -->	
+						</div><!-- col-sm-4 -->	
+						
+						<div class="col-sm-6 col-md-4">
+							<div class="product" data-product="1">
+						
+								<div class="product-info">
+									<a class="product-image" href="#"><img src="images/popular-5-400x500.jpg" alt=""></a>
+									
+									<ul class="icons">
+										<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+										<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+										<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+									</ul>
+								</div><!-- product-info -->	
+								
+								<input class="quantity" name="quantity" type="hidden" value="1" />
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="price-wrapper">$<span class="price">123</span></h5>
+									
+							</div><!-- product -->	
+						</div><!-- col-sm-4 -->	
+
+						<div class="col-sm-6 col-md-4">
+							<div class="product" data-product="1">
+						
+								<div class="product-info">
+									<a class="product-image" href="#"><img src="images/popular-6-400x500.jpg" alt=""></a>
+									
+									<ul class="icons">
+										<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+										<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+										<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+									</ul>
+								</div><!-- product-info -->	
+								
+								<input class="quantity" name="quantity" type="hidden" value="1" />
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="price-wrapper">$<span class="price">123</span></h5>
+									
+							</div><!-- product -->	
+						</div><!-- col-sm-4 -->	
+						
+						<div class="col-sm-6 col-md-4">
+							<div class="product" data-product="1">
+						
+								<div class="product-info">
+									<a class="product-image" href="#"><img src="images/popular-7-400x500.jpg" alt=""></a>
+									
+									<ul class="icons">
+										<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+										<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+										<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+									</ul>
+								</div><!-- product-info -->	
+								
+								<input class="quantity" name="quantity" type="hidden" value="1" />
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="price-wrapper">$<span class="price">123</span></h5>
+									
+							</div><!-- product -->	
+						</div><!-- col-sm-4 -->	
+						
+						<div class="col-sm-6 col-md-4">
+							<div class="product" data-product="1">
+						
+								<div class="product-info">
+									<a class="product-image" href="#"><img src="images/popular-8-400x500.jpg" alt=""></a>
+									
+									<ul class="icons">
+										<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+										<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+										<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+									</ul>
+								</div><!-- product-info -->	
+								
+								<input class="quantity" name="quantity" type="hidden" value="1" />
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="price-wrapper">$<span class="price">123</span></h5>
+									
+							</div><!-- product -->	
+						</div><!-- col-sm-4 -->	
+						
+						<div class="col-sm-6 col-md-4">
+							<div class="product" data-product="1">
+						
+								<div class="product-info">
+									<a class="product-image" href="#"><img src="images/popular-9-400x500.jpg" alt=""></a>
+									
+									<ul class="icons">
+										<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+										<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+										<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+									</ul>
+								</div><!-- product-info -->	
+								
+								<input class="quantity" name="quantity" type="hidden" value="1" />
+								<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+								<h5 class="price-wrapper">$<span class="price">123</span></h5>
+									
+							</div><!-- product -->	
+						</div><!-- col-sm-4 -->	
+						
+						
+						<div class="col-sm-12">
+							<div class="list-footer margin-bottom-30">
+								<ul>
+									<li><a href="#"><i class="ion-ios-arrow-thin-left"></i></a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#"><i class="ion-ios-arrow-thin-right"></i></a></li>
+								</ul>
+									
+							</div><!-- list-footer -->	
+						</div><!-- col-sm-12 -->	
+						
+					</div><!-- row -->
+				</div><!-- col-sm-9 -->
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- related-product -->
+
+	<footer>
+		<div class="container">
+		
+			<div class="footer-top">
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="margin-bottom-30">
+							<h4 class="margin-bottom-20">About us</h4>
+							<p class="margin-tb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+								Lorem Ipsum has been the industry's.</p>
+							<a class="read-more-btn" href="about-1.html"><b>READ MORE</b></a>
+							<ul class="social-icons margin-top-30">	
+								<li>Follow us on</li>
+								<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+								<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+								<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+								<li><a href="#"><i class="ion-social-rss"></i></a></li>
+							</ul><!-- social-icons -->
+						</div><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="col-sm-6 col-md-2">
+						<h4 class="margin-bottom-20">Information</h4>
+						<ul class="imp-link margin-bottom-30">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Partners</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="clearfix hidden-xs hidden-md hidden-lg"></div>
+					
+					<div class="col-sm-6 col-md-3">
+						<h4 class="margin-bottom-20">Customer Service</h4>
+						<ul class="imp-link margin-bottom-30">
+							<li><a href="#">Shipping Policy</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Returns & Refunds</a></li>
+							<li><a href="#">Online Stores</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="col-sm-6 col-md-3">
+						<h4 class="margin-bottom-20">Tags</h4>
+						<ul class="tags margin-bottom-30">
+							<li><a href="#">Laptop</a></li>
+							<li><a href="#">Men</a></li>
+							<li><a href="#">Women</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Fashion</a></li>
+							<li><a href="#">Shirt</a></li>
+							<li><a href="#">Accesories</a></li>
+						</ul><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+				</div><!-- row -->
+			</div><!-- footer-top -->
+			
+			<div class="footer-bottom">
+				<div class="row">
+					<div class="col-sm-6">
+						<p class="copyright light-text margin-bottom-20">&copy; 2018 all rights reserved w3engineers.com</p>
+					</div><!-- col-sm-6 -->
+					
+					<div class="col-sm-6">
+						<a class="payment-options margin-bottom-20" href="#"><img src="images/payment-icon.png" alt=""></a>
+					</div><!-- col-sm-6 -->
+				</div><!-- row -->
+				
+			</div><!-- footer-bottom -->
+		</div><!-- conatiner -->
+	</footer>
+	
+<!-- jQuery library -->
+<script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="plugin-frameworks/bootstrap.min.js"></script>
+
+<!-- Jquery Visible -->
+<script src="plugin-frameworks/jquery-ui.min.js"></script>
+
+<!-- Main Script -->
+<script src="common/script.js"></script>
+
+</body>
+
+<!-- Mirrored from theme1.w3engineers.com/ecommerce-demo/product-list-top-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Mar 2018 20:35:22 GMT -->
+</html>

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+:root {
+  // font family
+  --font-regular: "Montserrat-Regular";
+  // Color variable
+  --white-color: #fff;
+  --black-color: #000;
+  --dark-color: #222;
+}
+
+
+// background-image: -webkit-linear-gradient(left, #00eda4, #6a7df1);
+// background-image: -moz-linear-gradient(left, #00eda4, #6a7df1);
+// background-image: -o-linear-gradient(left, #00eda4, #6a7df1);
+// background-image: -ms-linear-gradient(left, #00eda4, #6a7df1);
+// background-image: linear-gradient(to right, #00eda4, #6a7df1);

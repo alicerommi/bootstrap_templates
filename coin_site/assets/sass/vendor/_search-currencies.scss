@@ -1,0 +1,56 @@
+// Exchange Search Currency Section
+.exchange-currency-search {
+  background-color: $gray2-color;
+  width: 100%;
+  padding-top: 12em;
+  padding-bottom: 2em;
+  .heading {
+    max-width: 400px;
+    margin: 0 auto;
+    h2 {
+      font-size: 2.45rem;
+      font-family: $font-slack;
+      font-weight: 500;
+      color: $black-color;
+      position: relative;
+      span {
+        color: $maroon-color;
+        font-weight: 600;
+      }
+    }
+  }
+  .search-bar {
+    transform: translateY(110%);
+    .search-input {
+      .form-group {
+        position: relative;
+        .form-control {
+          border-radius: 50px;
+          padding: 1.65rem 3rem;
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+          border: none;
+        }
+        .submit {
+          position: absolute;
+          top: 7px;
+          right: 8px;
+          border-radius: 50px;
+          cursor: pointer;
+          // padding: 1.65rem 1.85rem;
+          height: 60px;
+          width: 60px;
+          border-color: rgb(82, 39, 137);
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#522789+0,a4063a+98 */
+          background: rgb(82,39,137); /* Old browsers */
+          background: -moz-linear-gradient(45deg, rgba(82,39,137,1) 0%, rgba(164,6,58,1) 98%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(45deg, rgba(82,39,137,1) 0%,rgba(164,6,58,1) 98%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(45deg, rgba(82,39,137,1) 0%,rgba(164,6,58,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#522789', endColorstr='#a4063a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+          .fa {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

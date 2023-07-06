@@ -1,0 +1,234 @@
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Template Name 	:  Feather
+	Version    		:  1.0
+	Author     		:  W3Engineers Ltd.
+	Author URI 		:  https://themeforest.net/user/w3engineers
+
+====================================================
+
+	1. PRIMARY STYLES
+	2. COMMON STYLES
+		GO TOP 
+	3. MENU STYLING
+		LOGO 
+		MENU RIGHT AREA 
+		MAIN MENU 
+		DROPDOWN 
+		DROPDOWN MULTI LEVEL 
+		DROPDOWN HOVER EFFECT 
+		NAV ICON 
+		SEARCH AREA 
+		POP UP AREA 
+		SEARCH INPUT 
+		POP FROM LEFT 
+		CART STYLING 
+	4. SLIDER STYLING
+	5. COUNTER SECTION STYLING
+	6. TESTIMONIAL STYLING
+		SWIPER SLIDER 
+	7. TEAM SECTION STYLING
+		SLIDER CONTROLER 
+	8. PARTNER LIST
+	9. FOOTER SECTION STYLING
+	
+====================================================
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+2. COMMON STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+3. MENU STYLING
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+/* ---------------------------------
+4. SLIDER STYLING
+--------------------------------- */
+
+.main-slider{ height: 500px; margin-top: 80px; overflow: hidden; position: relative; color: #fff; }
+
+.main-slider .slider-bg{ position: absolute; top: 0px; bottom: 0; left: 0px; right: 0px; background-size: cover; 
+	z-index: -3; background-image: url(../images/slider-2-1920x1080.jpg); background-position: 40% center; }
+
+.main-slider .slider-bg:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -5; 
+	background: rgba(0,0,0,.3); }
+
+.main-slider .icon{ margin: 0 10px; -webkit-transform: translateY(2px); transform: translateY(2px); }
+
+.main-slider a:focus,
+.main-slider a:hover{ color: #ddd; }
+
+
+@media only screen and (max-width: 767px) {
+	
+	.main-slider{ margin-top: 60px; height: 400px; }
+	
+}
+
+
+/* ---------------------------------
+5. COUNTER SECTION STYLING
+--------------------------------- */
+
+.counter-section { text-align: center; padding: 70px 0 40px; }
+
+.counter-section .counter { position: relative; display: inline-block; text-align: left; }
+
+.counter .icon { font-size: 50px; display: inline-block; position: absolute; top: 50%;
+	-webkit-transform: translateY(-50%);  transform: translateY(-50%); }
+	
+.counter .right-area { display: inline-block; margin-left: 70px; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+
+	.counter .icon { position: static; text-align: center; display: block; 
+		-webkit-transform: translateY(0%); transform: translateY(0%); }
+
+	.counter .right-area { border: 0; margin: 0; padding: 0; text-align: center; }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.counter-section { text-align: center; padding: 40px 0 20px; }
+
+}
+
+
+/* ---------------------------------
+6. TESTIMONIAL STYLING
+--------------------------------- */
+
+.testimonial .profile-image{ height: 120px; width: 120px; border-radius: 100px; margin: 0 auto; overflow: hidden; }
+
+.testimonial .quoto{ font-size: 1.6em; padding: 0 30px; color: #444; }
+
+.testimonial .quoto i{ font-size: 1.5em; position: absolute; display: inline-block; color: #ccc; }
+
+.testimonial .author-info{ margin-bottom: 10px; }	
+
+
+/* SWIPER SLIDER */
+
+.testimonial-section .swiper-container{ padding: 0;  padding-bottom: 70px; margin-bottom: 30px; }
+
+.testimonial-section .swiper-button-prev,
+.testimonial-section .swiper-button-next{ position: absolute; top: auto; bottom: 0px; opacity: 1; margin-top: -20px; 
+	width: 36px; line-height: 40px; height: 40px; text-align: center; border-radius: 2px; font-size: 30px;
+	border: 1px solid #0c98cf; background: #fff; color: #000; 
+	-webkit-transition: all .25s ease; transition: all .25s ease;
+	-webkit-transform: translateX(0px); transform: translateX(0px); }
+	
+.testimonial-section .swiper-button-prev{ left: 50%; margin-left: -40px; }
+
+.testimonial-section .swiper-button-next{ right: 50%; margin-right: -40px;  }
+
+.testimonial-section .swiper-container .swiper-button-prev:hover,
+.testimonial-section .swiper-container .swiper-button-next:hover{ border-color: #fdd921; background: #fdd921; color: #000; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+
+	.testimonial .quoto{ padding: 0 0px; }
+
+	.testimonial .quoto i{ display: none; }
+	
+}
+
+
+/* ---------------------------------
+7. TEAM SECTION STYLING
+--------------------------------- */
+
+.team{ position: relative; }
+
+.team .team-image{ width: 100%; }
+
+.team .social-icons{ position: absolute; top: 20px; right: 20px; }
+
+.team .social-icons > li{ display: block; }
+	
+.team .social-icons > li > a{ display: block; height: 35px; line-height: 33px; width: 35px; text-align: center; 
+	border: 1px solid rgba(255,255,255,.2); border-bottom-width: 0; background: #0d98cf; color: #fff; }
+
+.team .social-icons > li:last-child > a{ border-bottom-width: 1px; }
+
+.team .social-icons > li > a:hover{ background: #fdd921; color: #222; }
+
+
+/* SLIDER CONTROLER */
+
+.swiper-container{ padding: 0 10px; position: relative; }
+
+.swiper-button-prev,
+.swiper-button-next{ position: absolute; top: 50%; height: 40px; margin-top: -20px; width: 36px; line-height: 36px; 
+	height: 36px; text-align: center; border-radius: 2px; font-size: 30px; opacity: 0;
+	border: 1px solid #0c98cf; background: #fff; color: #000; 
+	-webkit-transition: all .25s ease; transition: all .25s ease; }
+	
+.swiper-button-prev{ left: 0px; -webkit-transform: translateX(10px); transform: translateX(10px); }
+
+.swiper-button-next{ right: 0px; -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next{ opacity: 1; -webkit-transform: translateX(0px); 
+	transform: translateX(0px); }
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	.team .social-icons{ top: 5px; right: 5px; }
+	
+	/* SLIDER CONTROLER */
+
+	.swiper-button-prev,
+	.swiper-button-next{ opacity: 1; }
+	
+}
+
+
+/* ---------------------------------
+8. PARTNER LIST
+--------------------------------- */
+
+.partner-list{ padding: 30px 0; text-align: center; border-bottom: 1px solid #eee; }
+
+.partner-list .partner{ padding: 20px 50px; opacity: .8; -webkit-transition: all .25s ease; transition: all .25s ease; 
+	-webkit-filter: grayscale(1); filter: grayscale(1); }
+
+.partner-list .partner:hover{ opacity: .9; -webkit-filter: grayscale(0); filter: grayscale(0); }
+
+
+/* ---------------------------------
+9. FOOTER SECTION STYLING
+--------------------------------- */
+
+/* common/footer-styles.css */
+

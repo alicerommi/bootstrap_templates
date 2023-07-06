@@ -1,0 +1,55 @@
+// Meeting Section
+.meeting-section {
+  padding: 4em 0;
+  margin: 0;
+  background: $white-color;
+  width: 100%;
+  .heading {
+    h6 {
+      text-transform: uppercase;
+      color: $gray-color;
+      position: relative;
+      text-align: center;
+      font-size: .95rem;
+      font-family: $font-slack;
+      font-weight: 500;
+      vertical-align: middle;
+    }
+    h2 {
+      font-family: $font-slack;
+      font-weight: 700;
+      font-size: 1.95rem;
+      position: relative;
+      text-align: center;
+      text-transform: capitalize;
+      vertical-align: middle;
+    }
+  }
+  .meeting-card {
+    margin-top: 2rem;
+    .card {
+      padding: 1em;
+      border-radius: 10px;
+      border-color: $gray2-color;
+      border-width: 2px;
+    }
+    .meet-title {
+      padding-top: 15px;
+      h4 {
+        font-size: 1.20rem;
+        font-family: $font-slack;
+        font-weight: 600;
+        position: relative;
+        text-align: left;
+        vertical-align: middle;
+      }
+      p {
+        padding-top: 10px;
+        font-family: $font-slack;
+        font-size: .90rem;
+        font-weight: 400;
+        color: $gray-color;
+      }
+    }
+  }
+}

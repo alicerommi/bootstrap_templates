@@ -1,0 +1,547 @@
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Template Name 	:  Feather
+	Version    		:  1.0
+	Author     		:  W3Engineers Ltd.
+	Author URI 		:  https://themeforest.net/user/w3engineers
+
+====================================================
+
+	1. PRIMARY STYLES
+	2. COMMON STYLES
+		GO TOP
+	3. MENU STYLING
+		LOGO
+		MENU RIGHT AREA
+		MAIN MENU
+		DROPDOWN
+		DROPDOWN MULTI LEVEL
+		DROPDOWN HOVER EFFECT
+		NAV ICON
+	4. SLIDER STYLING
+		BOOTSTRAP CAROUSEL STYLING
+		CAROUSEL INDIACTORS
+		INTRO AREA
+	5. FEATURED PRODUCTS STYLING
+	6. POPULAR PRODUCTS STYLING
+		SLIDER CONTROLER
+	7. FEATURED CATEGORY STYLING
+		MASONARY 
+	8. TESTIMONIAL STYLING
+		SWIPER SLIDER 
+	9. PARTNER STYLING
+	10. NEWSLETTER STYLING
+	11. FOOTER SECTION STYLING
+
+===================================================
+
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+2. COMMON STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+3. MENU STYLING
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+4. SLIDER STYLING
+--------------------------------- */
+
+.main-slider{ height: 900px; margin-bottom: 70px; position: relative; color: #fff; }
+
+.main-slider .slider-bg{ position: absolute; top: 0px; bottom: 0; left: 0px; right: 0px; z-index: -3; background-size: cover; 
+	background-position: 40% center; }
+
+.main-slider .slider-bg:after{ content:''; position: absolute; top: 0px; bottom: 0; left: 0px; right: 0px; z-index: -3;
+	background: rgba(0,0,0,.2); }
+
+.main-slider .slider-content{ position: relative; height: 100%; padding: 0 60px; }
+
+.slider-content .title{ line-height: 1.2; }
+
+.slider-content .desc{ margin: 10px 0 30px; }
+
+.slider-content .carousel-btn{ padding: 15px 40px; border-radius: 2px; letter-spacing: 3px;
+	border: 2px solid #0c98cf; background: #0c98cf; }
+
+.slider-content .carousel-btn:focus,
+.slider-content .carousel-btn:hover{ border-color: #fdd921; background: #fdd921; color: #000; }
+
+.slider-bg.bg-1{ background-image: url(../images/slider-1-1920x1080.jpg); }
+.slider-bg.bg-2{ background-image: url(../images/slider-2-1920x1080.jpg); }
+.slider-bg.bg-3{ background-image: url(../images/slider-3-1920x1080.jpg); }
+
+
+/* BOOTSTRAP CAROUSEL STYLING*/
+
+.carousel-fade .carousel-inner .item { -webkit-transition-property: opacity; transition-property: opacity; }
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right{ opacity: 0; }
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right{ opacity: 1; }
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right{ left: 0; -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+
+.carousel-fade .carousel-control{ top: 50%; margin-top: -40px; font-size: 40px; height: 80px; line-height: 40px; width: auto;
+	opacity: 1; padding: 20px 40px; text-shadow: none; color: #fff; 
+	-webkit-transition: all .15s ease; transition: all .15s ease; }
+
+.carousel-control.left,
+.carousel-control.right{ background: none; }
+
+.carousel-fade .carousel-control:hover{ -webkit-transform: scale(1.15); transform: scale(1.15); }
+
+
+/* CAROUSEL INDIACTORS */
+
+.carousel-indicators{ position: absolute; left: auto; right: 30px; width: auto; margin-left: 0; z-index: 2; }
+
+.carousel-indicators li.active,
+.carousel-indicators li{ padding: 0; height: auto; width: auto; display: inline-block; border: 0; background: none; 
+	margin: 0 3px; border-radius: 3px;
+	float: right; position: relative; height: 25px; width: 4px; background: #eee;
+	-webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+
+.carousel-indicators li.active{ -webkit-transform: scaleY(1.4); transform: scaleY(1.4); }
+	
+	
+/* INTRO AREA */
+
+.intro-section{ position: absolute; bottom: -70px; left: 0px; right: 0px; }
+
+.intro{ position: relative; padding: 10px 40px 50px; border-radius: 0 0 10px 10px; margin: 0 50px;
+	box-shadow: 3px 10px 40px rgba(0,0,0,.4); border-bottom: 4px solid #fdd921; background: #0c98cf; }
+	
+.intro:after{ content:''; position: absolute; top: -50px; height: 50px; left: 0; right: 0; background-size: 100% 50px; 
+	background-image: url(../images/intro-border.png); }
+
+.intro .para{ margin-top: 10px; color: #eee; }
+
+.intro .left-area{ padding-right: 370px; }
+
+.intro .right-area{ position: absolute; top: 0; bottom: 0; right: 30px; width: 370px; text-align: center; }
+
+	
+.intro .btn{ padding: 10px 12px; letter-spacing: 0; border-radius: 3px; border: 2px solid #fdd921; background: #fdd921; color: #000; }
+
+.intro .btn.join-btn{ margin-right: 10px; background: none; color: #fdd921; }
+
+.intro .btn:hover{ background: none; color: #fdd921; }
+
+.intro .btn.join-btn:hover{ background: #fdd921; color: #111; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+	
+	.main-slider .slider-content{ padding: 0 40px; }
+	
+	.carousel-fade .carousel-control{ padding: 20px 15px; }
+	
+	
+	/* INTRO AREA */
+	
+	.intro .left-area{ padding-right: 270px; }
+	
+	.intro .right-area{ text-align: left; width: 250px; }
+	
+	.intro .btn{ margin-bottom: 10px; }
+	
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.main-slider{ height: 500px; margin-top: 60px; margin-bottom: 150px; }
+
+	.slider-content .desc{ margin: 20px 0; }
+
+	/* BOOTSTRAP CAROUSEL STYLING*/
+	.carousel-fade .carousel-control{ padding: 20px 15px; }
+	
+	/* CAROUSEL INDIACTORS */
+	.carousel-indicators{ display: none; right: 10px; }
+	
+	.carousel-indicators li:after{ width: 3px; }
+	
+	
+	/* INTRO AREA */
+	.intro-section{ bottom: -150px; }
+	
+	.intro{ border-radius: 5px; margin: 0px; padding: 30px 20px; box-shadow: none; }
+	
+	.intro .left-area{ padding-right: 0px; }
+	
+	.intro .right-area{ margin-top: 15px; position: static; text-align: left; width: auto; }
+	
+	.intro:after{ display: none; }
+	
+}
+@media only screen and (max-width: 479px) {
+	
+	.main-slider{ text-align: center; margin-bottom: 200px; }
+	
+	.main-slider .intro{ text-align: left; }
+	
+	/* INTRO AREA */
+
+	.intro-section{ bottom: -200px; }
+
+}
+
+@media only screen and (max-width: 359px) {
+
+	.main-slider .slider-content{ padding: 50px 30px 120px; }
+	
+	.slider-content .carousel-btn{ padding: 10px 25px; }
+
+}
+
+
+/* ---------------------------------
+5. FEATURED PRODUCTS STYLING
+--------------------------------- */
+
+.featured-products{ border-top: 0; margin-left: -50px; }
+
+.featured-products .product{ padding-left: 50px; margin: 0 0 20px; position: relative; max-width: 1000px; }
+
+.featured-products .product.left{ float: right; }
+
+.featured-products .product.right{ margin-top: 50px; }
+
+.featured-products .product .product-image{ position: relative; }
+
+.featured-products .product .image-wrapper img{ -webkit-transition: all .2s ease; transition: all .2s ease; }
+
+.featured-products .product:hover .image-wrapper img{ -webkit-transform: scale(1.02); transform: scale(1.02); }
+
+.featured-products .product .product-wrapper{ max-width: 400px; }
+
+.featured-products .product .product-info{ overflow: hidden; margin-top: 15px; }
+
+.featured-products .product .product-info .title{ margin: 0; float: left; }
+
+.featured-products .product .product-info .p-price{ float: right; }
+
+.featured-products .product .btn{ position: absolute; top: 50%; left: 50%; margin-left: -90px; margin-top: -25px; opacity: 0;
+	width: 180px; padding: 0; height: 50px; line-height: 50px; border: 0; }
+
+.featured-products .product .btn:hover{ background: #fdd921; color: #000; }
+
+.featured-products .product:hover .btn{ opacity: 1; }
+
+
+[data-paralax-scroll]{ position: relative; z-index: 1; overflow: hidden; border-radius: 3px; overflow: hidden; }
+
+[data-paralax-scroll] .top,
+[data-paralax-scroll] .bottom,
+[data-paralax-scroll] .left,
+[data-paralax-scroll] .right{ position: absolute; z-index: 2; background: #fff; 
+	-webkit-transition: -webkit-transform 3.5s cubic-bezier(.1,.84,.23,.99); 
+	transition: transform 3.5s cubic-bezier(.1,.84,.23,.99); }
+
+[data-paralax-scroll] .top{ top: 0; left: 0; right:0; bottom: 90%; }
+[data-paralax-scroll] .bottom{ top: 90%; left: 0; right: 0; bottom: 0; }
+[data-paralax-scroll] .left{ top: 0; left: 0; right: 90%; bottom: 0; }
+[data-paralax-scroll] .right{ top: 0; left: 90%; right: 0; bottom: 0; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+	
+	.featured-products{ padding: 100px 0 50px; margin: 0; }
+	
+	.featured-products .product .product-wrapper{ max-width: 400px; margin-left: auto; margin-right: auto; }
+	
+	.featured-products .product .product-info{ position: static; max-width: 1000px; margin: 23px 0 50px; }
+
+	.featured-products .product.left,
+	.featured-products .product.right{ float: none; }
+	
+	.featured-products .product.right{ margin-top: 0px; }
+
+	.featured-products .product{ padding-left: 0px; }
+	
+	.featured-products .product .product-info .btn{ margin-bottom: 0; background: none; color: #333; }
+	
+	.featured-products .product .product-info .btn:hover{ background: #0c98cf; color: #fff; }
+	
+}
+
+
+@media only screen and (max-width: 767px) {
+	
+	.featured-products{ text-align: center; padding: 50px 0 0; }
+	
+	.featured-products .product{ padding-left: 0px; }
+	.featured-products .product.right{ margin-top: 0px; }
+
+	.featured-products .product .product-image{ margin: 0 auto; }
+	
+	.featured-products .product .product-info{ position: static; }
+
+	[data-paralax-scroll] .top,
+	[data-paralax-scroll] .bottom,
+	[data-paralax-scroll] .left,
+	[data-paralax-scroll] .right{ display: none; }
+
+}
+	
+
+/* ---------------------------------
+6. POPULAR PRODUCTS STYLING
+--------------------------------- */
+
+.popular-products .view-all-btn{ text-decoration: underline; }
+
+.popular-products .view-all-btn:hover{ text-decoration: none; }
+
+
+/* SLIDER CONTROLER */
+
+.popular-products .swiper-container{ padding: 0 10px; }
+
+.popular-products .swiper-button-prev,
+.popular-products .swiper-button-next{ position: absolute; top: 50%; margin-top: -53px; width: 36px; 
+	line-height: 36px; height: 36px; text-align: center; border-radius: 2px; font-size: 30px; opacity: 0;
+	border: 1px solid #eee; background: #fff; color: #000; 
+	-webkit-transition: all .2s ease; transition: all .2s ease; }
+	
+.popular-products .swiper-button-prev{ left: 0px; -webkit-transform: translateX(10px); transform: translateX(10px); }
+
+.popular-products .swiper-button-next{ right: 0px; -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+
+.popular-products .swiper-container:hover .swiper-button-prev,
+.popular-products .swiper-container:hover .swiper-button-next{ opacity: 1; 
+	-webkit-transform: translateX(0px); transform: translateX(0px); }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+
+	/* SLIDER CONTROLER */
+	
+	.popular-products .swiper-container{ padding: 0 0px; }
+	
+	.popular-products .swiper-button-prev,
+	.popular-products .swiper-button-next{ opacity: 1; }
+	
+}
+
+
+/* ---------------------------------
+7. FEATURED CATEGORY STYLING
+--------------------------------- */
+
+.popular-category{ padding: 80px 0 76px; }
+
+.popular-category .category{ position: relative; border-radius: 3px; overflow: hidden; -webkit-transition: all 0s; transition: all 0s; }
+
+.popular-category .category img{ -webkit-transition: all .2s ease; transition: all .2s ease; }
+
+.popular-category .category:hover img{ -webkit-transform: scale(1.04); transform: scale(1.04); }
+
+.popular-category .category .title{ position: absolute; bottom: 0; left: 0; right: 0; padding: 0 20px; height: 40px; 
+	line-height: 40px; background: rgba(12,152,207,.8); color: #fff;  }
+
+.popular-category .category .title .icon{ float: right; font-size: 25px; line-height: 40px; 
+	-webkit-transition: all .1s .1s ease-in-out; transition: all .1s .1s ease-in-out;
+	-webkit-transform: translateX(0px); transform: translateX(0px); }
+
+.popular-category .category:hover .title .icon{ -webkit-transform: translateX(5px); transform: translateX(5px); }
+
+
+/* MASONARY */
+
+.grid{ margin: -7.5px; }
+
+.grid-item { width: 33.333%; padding: 6px 7.5px; }
+
+.grid-item--width2 { width: 66.57%; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+
+	.popular-category{ padding: 50px 0; }
+	
+	/* MASONARY */
+	.grid-item { width: 50%; }
+
+	.grid-item--width2 { width: 50%; }
+
+}
+
+@media only screen and (max-width: 479px) {
+
+	/* MASONARY */
+
+	.grid-item { width: 100%; }
+
+	.grid-item--width2 { width: 100%; }
+	
+}
+
+
+/* ---------------------------------
+8. TESTIMONIAL STYLING
+--------------------------------- */
+
+.testimonial .profile-image{ height: 120px; width: 120px; border-radius: 100px; margin: 0 auto; overflow: hidden; }
+
+.testimonial .quoto{ font-size: 1.6em; padding: 0 30px; color: #444; }
+
+.testimonial .quoto i{ font-size: 1.5em; position: absolute; display: inline-block; color: #ccc; }
+
+.testimonial .author-info{ margin-bottom: 10px; }	
+
+
+/* SWIPER SLIDER */
+
+.testimonial-section .swiper-container{ padding: 0;  padding-bottom: 70px; margin-bottom: 30px; }
+
+.testimonial-section .swiper-button-prev,
+.testimonial-section .swiper-button-next{ position: absolute; top: auto; bottom: 0px; opacity: 1; margin-top: -20px; 
+	width: 36px; line-height: 40px; height: 40px; text-align: center; border-radius: 2px; font-size: 30px;
+	border: 1px solid #0c98cf; background: #fff; color: #000; 
+	-webkit-transition: all .25s ease; transition: all .25s ease;
+	-webkit-transform: translateX(0px); transform: translateX(0px); }
+	
+.testimonial-section .swiper-button-prev{ left: 50%; margin-left: -40px; }
+
+.testimonial-section .swiper-button-next{ right: 50%; margin-right: -40px;  }
+
+.testimonial-section .swiper-container .swiper-button-prev:hover,
+.testimonial-section .swiper-container .swiper-button-next:hover{ border-color: #fdd921; background: #fdd921; color: #000; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+
+	.testimonial .quoto{ padding: 0 0px; }
+
+	.testimonial .quoto i{ display: none; }
+	
+}
+
+
+/* ---------------------------------
+9. PARTNER STYLING
+--------------------------------- */
+
+.partners-section{ overflow: hidden; padding: 50px 0; text-align: center; }
+
+.partners-section .partner{ margin: 0 auto 0px; max-width: 250px; width: 20%; padding: 0 50px; float: left; opacity: .9;
+	-webkit-transition: all .2s; transition: all .2s; -webkit-filter: grayscale(1); filter: grayscale(1); }
+
+.partners-section .partner:hover{ opacity: 1; -webkit-filter: grayscale(0); filter: grayscale(0); }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+
+	.partners-section .partner{ padding: 0 20px; max-width: 200px; margin: 0 auto; }
+
+}
+@media only screen and (max-width: 767px) {
+	
+	.partners-section{ padding: 30px 0; }
+	
+	.partners-section .partner{ width: 20%; padding: 20px 20px; }
+	
+}	
+@media only screen and (max-width: 479px) {
+	
+	.partners-section{ padding: 20px 0; }
+	
+	.partners-section .partner{ padding: 10px 10px; }
+	
+}
+
+
+/* ---------------------------------
+10. NEWSLETTER STYLING
+--------------------------------- */
+
+.newsletter-section{ padding: 160px 0; margin: 0 100px; position: relative; z-index: 1; background-size: cover; 
+	background-image: url(../images/slider-4-1920x1080.jpg); color: #fff; }
+
+.newsletter-section:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1; 
+	background: rgba(0,0,0,.5); }
+
+.newsletter-section .desc{ padding: 0px 20px; margin: 10px 0 30px; line-height: 1.6; color: #eee; }
+
+.newsletter-area{ height: 50px; width: 100%; position: relative; z-index: 1; }
+
+.newsletter-area .email-input{ position: absolute; width: 100%; top: 0; left: 0; bottom: 0; padding: 0 80px 0 20px; 
+	height: 50px; line-height: normal; z-index: -5; border: 1px solid #fff; background: #fff; }
+
+.newsletter-area .submit-btn{ position: absolute; width: 60px; font-size: 30px; line-height: 50px;
+	top: 0; right: 0; bottom: 0; border: 0; outline: 0; background: none; border-left: 1px solid #aaa; color: #333; }
+
+.newsletter-area .submit-btn:focus,
+.newsletter-area .submit-btn:hover{ background: #0c98cf; color: #fff; }
+
+.newsletter-area .email-input:focus + .submit-btn{ border-color: #aaa; }
+
+.newsletter-area .email-input:focus{ border-color: #aaa!important; color: #000; }
+	
+	
+.newsletter-area ::-webkit-input-placeholder { color: #aaa; }
+
+.newsletter-area ::-moz-placeholder { color: #aaa; }
+
+.newsletter-area :-ms-input-placeholder { color: #aaa; }
+
+.newsletter-area :-moz-placeholder { color: #aaa; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+
+	.newsletter-section{ margin: 0px; }
+
+}
+@media only screen and (max-width: 767px) {
+
+	.newsletter-section{ padding: 50px 0px; margin: 0px; }
+	
+}
+	
+
+/* ---------------------------------
+11. FOOTER SECTION STYLING
+--------------------------------- */
+
+/* common/footer-styles.css */

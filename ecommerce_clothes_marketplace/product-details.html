@@ -1,0 +1,552 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from theme1.w3engineers.com/ecommerce-demo/product-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Mar 2018 20:35:22 GMT -->
+<head>
+<title>Feather - Responsive Ecommerce Template</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+
+<!-- Ion Icons -->
+<link rel="stylesheet" href="fonts/ionicons.css">
+
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="plugin-frameworks/bootstrap.css">
+
+<!-- Swiper Slider -->
+<link rel="stylesheet" href="plugin-frameworks/swiper.css">
+
+<!-- Jquery Zoom -->
+<link rel="stylesheet" href="plugin-frameworks/xzoom.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="common/primary-styles.css">
+<link rel="stylesheet" href="common/header-styles.css">
+
+<link rel="stylesheet" href="product-details/style.css">
+
+<link rel="stylesheet" href="common/footer-styles.css">
+
+
+</head>
+<body>
+	
+	<div class="page-loader">
+		<div class="spinner">
+			<div class="page-loader">
+			  <div class="ball ball-1"></div>
+			  <div class="ball ball-2"></div>
+			  <div class="ball ball-3"></div>
+			  <div class="ball ball-4"></div>
+			</div>
+		</div><!-- spinner -->
+	</div><!-- page-loader -->
+
+	<a href="#" id="back-to-top"><i class="ion-android-arrow-up"></i></a>
+	<div class="dark-bg"></div>
+	
+	<div class="pop-up-area visible-on-click" id="src-pop-up">
+		<a class="close-btn" data-close="#src-pop-up" href="#"><i class="ion-android-close"></i></a>
+		<form>
+			<div class="src-input-area">
+				<input class="src-input" type="text" placeholder="Search">
+				<button class="src-btn" type="submit"><i class="src-icon ion-ios-arrow-thin-right"></i></button>
+			</div><!-- src-input-area -->
+		</form>
+	</div><!-- pop-up-area -->
+	
+	<div class="pop-from-left " id="cart-pop-left">
+		<div class="cart-header">
+			<h5 class="title">Cart</h5>
+			<a class="close-btn" data-close="#cart-pop-left" href="#">Close<i class="ion-android-close"></i></a>
+		</div>
+		<div class="cart">
+			<p class="no-item">No items yet</p>
+			<div id="cart-product-list">
+				
+			</div><!-- cart-product-list -->
+			
+			<h5 class="total-price">
+				<span>Subtotal</span>
+				<span class="float-right">
+					$<span class="subtotal">0</span>
+				</span>
+			</h5>
+			<a class="btn cart-btn" href="#"><b>VIEW CART</b></a>
+			<a class="btn checkout-btn" href="#"><b>CHECKOUT</b></a>
+			
+		</div><!-- cart -->
+	</div><!-- pop-from-left -->
+	
+	<header class="fixed-on-scroll">
+		<div class="container-fluid position-relative">
+			<div class="row">
+				<div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+					
+					<div class="menu-left-area">
+						<a href="index-2.html" class="logo"><img class="logo-big" src="images/logo-black.png" alt="Logo Image"></a>
+					</div>
+					
+					<div class="menu-right-area">
+						<ul>
+							<li><a data-popup="#src-pop-up" href="#"><i class="ion-android-search"></i></a></li>
+							<li class="view-cart"><a data-popup="#cart-pop-left" href="#"><i class="ion-ios-cart-outline"></i><span id="added-item">0</span></a></li>
+						</ul>
+					</div><!-- menu-right-area -->
+					
+					<div class="menu-nav-icon" data-menu-visible="#main-menu"><i class="ion-navicon"></i></div>
+					
+					<ul class="nav-visible main-menu" id="main-menu">
+						
+						<li><a href="#">HOME <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li><a href="index-2.html">HOME</a></li>
+								<li><a href="index-3.html">HOME 2</a></li>
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="#">PRODUCT LIST <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li><a href="product-list-left-sidebar.html">LEFT SIDEBAR</a></li>
+								<li><a href="product-list.html">RIGHT SIDEBAR</a></li>
+								<li><a href="product-list-top-sidebar.html">TOP SIDEBAR</a></li>
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="#">PAGES <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li class="active"><a href="product-details.html">PRODUCT DETAIL</a></li>
+								<li><a href="about-1.html">ABOUT</a></li>
+								<li><a href="contact-1.html">CONTACT</a></li>
+								
+								<li><a href="#">BLOG <i class="ion-android-arrow-dropright"></i></a>
+									<ul class="drop-down-lower">
+										<li><a href="blog.html">BLOG PAGE</a></li>
+										<li><a href="blog-details.html">BLOG DETAIL</a></li>
+									</ul><!-- drop-down-lower -->
+								</li>
+								
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="#">BLOG <i class="ion-android-arrow-dropdown"></i></a>
+							<ul class="drop-down">
+								<li><a href="blog.html">BLOG</a></li>
+								<li><a href="blog-details.html">BLOG DETAIL</a></li>
+							</ul><!-- drop-down -->
+						</li>
+						<li><a href="about-1.html">ABOUT US</a></li>
+						
+					</ul><!-- main-menu -->
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- conatiner -->
+	</header>
+
+
+	<section class="main-slider center-text">
+		<div class="slider-bg"></div>
+		<div class="display-table">
+			<div class="display-table-cell">
+				<h2><b class="max-bold">Product Detail</b></h2>
+				<h5 class="margin-top-10"><a href="index-2.html">Home</a><i class="icon ion-ios-arrow-forward"></i>
+					<a href="#">Product Detail</a></h5>
+			</div><!-- display-table-cell -->
+		</div><!-- display-table -->
+	</section><!-- main-slider -->
+
+	
+	<section class="product-details section">
+		<div class="container">
+			<div data-product="1">
+				<div class="row">
+					
+					<div class="col-sm-6">
+						<div class="product-image">
+							
+							<div class="p-single-image">
+								<div class="p-img active" id="p-img-1">
+									<div class="zoom" ><img src="images/product-1-700x900.jpg" alt=""/></div></div>
+								
+								<div class="p-img" id="p-img-2">
+									<div class="zoom" ><img src="images/product-2-700x900.jpg" alt=""/></div></div>
+								
+								<div class="p-img" id="p-img-3">
+									<div class="zoom" ><img src="images/product-3-700x900.jpg" alt=""/></div></div>
+									
+							</div><!-- p-single-image -->
+							
+							<div class="product-thumbnail">
+								<a class="thumbnail" data-p-image="#p-img-1"><img src="images/product-1-700x900.jpg" alt=""/></a>
+								<a class="thumbnail" data-p-image="#p-img-2"><img src="images/product-2-700x900.jpg" alt=""/></a>
+								<a class="thumbnail" data-p-image="#p-img-3"><img src="images/product-3-700x900.jpg" alt=""/></a>
+							</div><!-- product-thumbnail -->
+							
+						</div><!-- product-image -->
+					</div><!-- col-sm-6 -->
+					
+					<div class="col-sm-6">
+						<div class="product-info" >	
+							
+							<h4 class="title"><b>Men Stripe T-Shirt</b></h4>
+							<a class="review-link product-section" data-desc-active="#desc-item-3" href="#desc-item-3">
+								<img src="images/5-stars.png" alt=""><span>(2 Reviews)</span>
+							</a>
+							<h4><span class="price-before">$232</span>$<b class="price">123</b></h4>
+							<p class="desc">Keep your look lively wearing this shirt from the house of Mayra.
+								This shirt is designed as per the latest trends. Designed to perfection.</p>
+							
+							<div class="add-cart-form product-section">
+								<form method="post">
+									<div class="quantity-wrapper">
+										<a class="quantity-plus-btn" href="#" data-quantity="plus"><i class="ion-ios-plus-outline"></i></a>
+										<input class="quantity-input" type="text" name="quantity" value="1" id="quantity-input"/>
+										<a class="quantity-minus-btn" href="#" data-quantity="minus"><i class="ion-ios-minus-outline"></i></a>
+									</div>
+									<div class="quantity-btns">
+										<a class="submit-btn" data-cart-btn="1" ><b>ADD TO CART</b></a>
+										<a class="favourite-btn" href="#"><i class="ion-ios-heart"></i></a>
+									</div>
+								</form>
+							</div><!-- add-cart-form -->
+							
+							<ul class="social-icons product-section">
+								<li>Share this product : </li>
+								<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+								<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+								<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+								<li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+							</ul>
+							
+							<div class="product-info">
+								<ul class="margin-top-10">
+									<li><b>SKU: </b></li>
+									<li><a href="#">D1102</a></li>
+								</ul>
+								
+								<ul class="margin-top-10">
+									<li><b>TAGS : </b></li>
+									<li><a href="#">Men,</a></li>
+									<li><a href="#">Fashion,</a></li>
+									<li><a href="#">Jeans</a></li>
+								</ul>
+								
+								<ul class="margin-top-10">
+									<li><b>CATEGORY : </b></li>
+									<li><a href="#">Men,</a></li>
+									<li><a href="#">Fashion,</a></li>
+									<li><a href="#">Jeans</a></li>
+								</ul>
+							</div><!-- product-desc -->
+							
+						</div><!-- product-info -->
+					</div><!-- col-sm-6 -->
+				</div><!-- row -->
+			
+			</div><!-- data-product="1" -->
+			
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="product-heading">
+						<a class="title active" data-desc-active="#desc-item-1" href="#"><h4>Description</h4></a>
+						<a class="title" data-desc-active="#desc-item-2" href="#"><h4>Additional Info</h4></a>
+						<a class="title" data-desc-active="#desc-item-3" href="#"><h4>Review</h4></a>
+					</div><!-- product-heading -->
+					<div class="product-desc">
+					
+						<div class="desc-item active" id="desc-item-1">
+							<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+								Ipsum has been the of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+								publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+								Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+								printer took a galley of type and of Letraset sheets containing Lorem Ipsum passages, and more 
+								recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+								Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+								a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+								but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+								in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+								recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div><!-- desc-item -->
+						
+						<div class="desc-item" id="desc-item-2">
+							<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+								Lorem Ipsum has been the of Letraset sheets containing Lorem Ipsum passages, and more recently 
+								with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div><!-- desc-item -->
+						
+						<div class="desc-item" id="desc-item-3">
+							<div class="review-section">
+								<h5 class="title"><b>2 Reviews</b></h5>
+								
+								<div class="review">
+									<div class="author-img"><img src="images/team-1-350x400.jpg" alt=""></div>
+									<div class="review-desc">
+										<h5>John Doe</h5>
+										<h6 class="date">12 January 2018</h6>
+										<div class="star-icons">
+											<span class="black-star"></span>
+											<span class="half-star"></span>
+										</div>
+										<p class="desc">Ipsum is typesetting industry. Lorem Ipsum has been the of Letraset sheets containing Lorem Ipsum passages, 
+											and more recently with desktop publishing software.</p>
+									</div><!-- review-desc -->
+								</div><!-- review -->
+								
+								<div class="review">
+									<div class="author-img"><img src="images/team-2-350x400.jpg" alt=""></div>
+									<div class="review-desc">
+										<h5>John Doe</h5>
+										<h6 class="date">12 January 2018</h6>
+										<div class="star-icons">
+											<span class="black-star"></span>
+											<span class="half-star"></span>
+										</div>
+										<p class="desc">Ipsum is typesetting industry. Lorem Ipsum has been the of Letraset sheets containing Lorem Ipsum passages, 
+											and more recently with desktop publishing software.</p>
+									</div><!-- review-desc -->
+								</div><!-- review -->
+								
+							</div><!-- review-section -->
+							
+							<div class="submit-review-section">
+								<h5 class="margin-bottom-10"><b>Submit a review</b></h5>
+								<p class="title">Your email address will not be published.</p>
+								<h5 class="margin-bottom-10">Your Rating</h5>
+								
+								<ul class="review-stars" >
+									<li><a class="star" href="#"></a></li>
+									<li><a class="star" href="#"></a></li>
+									<li><a class="star" href="#"></a></li>
+									<li><a class="star" href="#"></a></li>
+									<li><a class="star" href="#"></a></li>
+								</ul>
+								
+								<div class="submit-review-form margin-tb-30">
+									<form method="post">
+										<textarea class="margin-bottom-20" rows="4" placeholder="Your review" required></textarea>
+										<input class="margin-bottom-20" type="text" placeholder="Your name" required>
+										<input class="margin-bottom-20" type="text" placeholder="Your email" required>
+										<button class="btn submit-btn" type="submit"><b>SUBMIT</b></button>
+									</form>
+								</div><!-- submit-review-form -->
+							</div><!-- submit-review-section -->
+						</div><!-- desc-item -->
+						
+					</div><!-- product-description -->
+						
+				</div><!-- col-sm-12 -->
+				
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- product-details -->
+	
+	
+	<section class="related-products section">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-12">
+					<h4 class="margin-bottom-50"><b>Related product</b></h4>
+				</div><!-- col-sm-12 -->
+				
+				<div class="col-sm-12">
+					<div class="swiper-container" data-slide-effect="slide" data-autoheight="false" data-swpr-speed="500"
+						data-swpr-autoplay="10000" data-swpr-slides-per-view="4" data-swpr-margin="30"  
+						data-swpr-breakpoints="true" data-swpr-loop="true">
+						<div class="swiper-wrapper">
+							
+							<div class="swiper-slide">
+								<div class="product" data-product="1">
+						
+									<div class="product-info">
+										<a class="product-image" href="#"><img src="images/popular-1-400x500.jpg" alt=""></a>
+										
+										<ul class="icons">
+											<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+											<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+											<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+										</ul>
+									</div><!-- product-info -->	
+									
+									<input class="quantity" name="quantity" type="hidden" value="1" />
+									<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+									<h5 class="price-wrapper">$<span class="price">123</span></h5>
+										
+								</div><!-- product -->	
+							</div><!-- swiper-slide -->			
+							
+							<div class="swiper-slide">
+								<div class="product" data-product="1">
+						
+									<div class="product-info">
+										<a class="product-image" href="#"><img src="images/popular-2-400x500.jpg" alt=""></a>
+										
+										<ul class="icons">
+											<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+											<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+											<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+										</ul>
+									</div><!-- product-info -->	
+									
+									<input class="quantity" name="quantity" type="hidden" value="1" />
+									<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+									<h5 class="price-wrapper">$<span class="price">123</span></h5>
+										
+								</div><!-- product -->	
+							</div><!-- swiper-slide -->	
+							
+							<div class="swiper-slide">
+								<div class="product" data-product="1">
+						
+									<div class="product-info">
+										<a class="product-image" href="#"><img src="images/popular-3-400x500.jpg" alt=""></a>
+										
+										<ul class="icons">
+											<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+											<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+											<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+										</ul>
+									</div><!-- product-info -->	
+										
+									<input class="quantity" name="quantity" type="hidden" value="1" />
+									<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+									<h5 class="price-wrapper">$<span class="price">123</span></h5>
+										
+								</div><!-- product -->	
+							</div><!-- swiper-slide -->	
+							
+							<div class="swiper-slide">
+								<div class="product" data-product="1">
+						
+									<div class="product-info">
+										<a class="product-image" href="#"><img src="images/popular-4-400x500.jpg" alt=""></a>
+										
+										<ul class="icons">
+											<li><a href="#"><i class="ion-ios-eye"></i></a></li>
+											<li><a href="#"><i class="ion-ios-heart"></i></a></li>
+											<li><a href="#" data-cart-btn="1"><i class="ion-ios-cart"></i></a></li>
+										</ul>
+									</div><!-- product-info -->	
+									
+									<input class="quantity" name="quantity" type="hidden" value="3" />
+									<h5><a class="title" href="#">Shirt Polar Blue</a></h5>
+									<h5 class="price-wrapper">$<span class="price">123</span></h5>
+										
+								</div><!-- product -->	
+							</div><!-- swiper-slide -->	
+							
+						</div><!-- swiper-wrapper -->	
+						
+						<div class="swpr-control" >
+							<div class="swiper-button-prev"><i class="ion-ios-arrow-thin-left"></i></div>
+							<div class="swiper-button-next"><i class="ion-ios-arrow-thin-right"></i></div>
+						</div>
+						
+					</div><!-- swiper-container -->
+				</div><!-- col-sm-12 -->
+				
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- related-product -->
+	
+	
+	<footer>
+		<div class="container">
+		
+			<div class="footer-top">
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="margin-bottom-30">
+							<h4 class="margin-bottom-20">About us</h4>
+							<p class="margin-tb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+								Lorem Ipsum has been the industry's.</p>
+							<a class="read-more-btn" href="about-1.html"><b>READ MORE</b></a>
+							<ul class="social-icons margin-top-30">	
+								<li>Follow us on</li>
+								<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+								<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+								<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+								<li><a href="#"><i class="ion-social-rss"></i></a></li>
+							</ul><!-- social-icons -->
+						</div><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="col-sm-6 col-md-2">
+						<h4 class="margin-bottom-20">Information</h4>
+						<ul class="imp-link margin-bottom-30">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Partners</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="clearfix hidden-xs hidden-md hidden-lg"></div>
+					
+					<div class="col-sm-6 col-md-3">
+						<h4 class="margin-bottom-20">Customer Service</h4>
+						<ul class="imp-link margin-bottom-30">
+							<li><a href="#">Shipping Policy</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Returns & Refunds</a></li>
+							<li><a href="#">Online Stores</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="col-sm-6 col-md-3">
+						<h4 class="margin-bottom-20">Tags</h4>
+						<ul class="tags margin-bottom-30">
+							<li><a href="#">Laptop</a></li>
+							<li><a href="#">Men</a></li>
+							<li><a href="#">Women</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Fashion</a></li>
+							<li><a href="#">Shirt</a></li>
+							<li><a href="#">Accesories</a></li>
+						</ul><!-- footer-section -->
+					</div><!-- col-sm-4 -->
+					
+				</div><!-- row -->
+			</div><!-- footer-top -->
+			
+			<div class="footer-bottom">
+				<div class="row">
+					<div class="col-sm-6">
+						<p class="copyright light-text margin-bottom-20">&copy; 2018 all rights reserved w3engineers.com</p>
+					</div><!-- col-sm-6 -->
+					
+					<div class="col-sm-6">
+						<a class="payment-options margin-bottom-20" href="#"><img src="images/payment-icon.png" alt=""></a>
+					</div><!-- col-sm-6 -->
+				</div><!-- row -->
+				
+			</div><!-- footer-bottom -->
+		</div><!-- conatiner -->
+	</footer>
+
+
+<!-- jQuery library -->
+<script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="plugin-frameworks/bootstrap.min.js"></script>
+
+<!-- Swiper Slider -->
+<script src="plugin-frameworks/swiper.min.js"></script>
+
+<!-- Jquery Visible -->
+<script src="plugin-frameworks/jquery.zoom.js"></script>
+
+<!-- Main Script -->
+<script src="common/script.js"></script>
+
+</body>
+
+<!-- Mirrored from theme1.w3engineers.com/ecommerce-demo/product-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Mar 2018 20:35:25 GMT -->
+</html>

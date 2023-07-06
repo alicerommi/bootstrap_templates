@@ -1,0 +1,232 @@
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Template Name 	:  Feather
+	Version    		:  1.0
+	Author     		:  W3Engineers Ltd.
+	Author URI 		:  https://themeforest.net/user/w3engineers
+
+====================================================
+
+	1. PRIMARY STYLES
+	2. COMMON STYLES
+		GO TOP 
+	3. MENU STYLING
+		LOGO 
+		MENU RIGHT AREA 
+		MAIN MENU 
+		DROPDOWN 
+		DROPDOWN MULTI LEVEL 
+		DROPDOWN HOVER EFFECT 
+		NAV ICON 
+		SEARCH AREA 
+		POP UP AREA 
+		SEARCH INPUT 
+		POP FROM LEFT 
+		CART STYLING 
+	4. SLIDER STYLING
+	5. BLOG POST
+	6. SIDEBAR STYLING
+		ABOUT 
+		NEWSLETTER 
+		TAGS 
+		RELATED POST 
+		FOLLOW US 
+		LIST FOOTER 
+		PRODUCT STYLING 
+	7. FOOTER SECTION STYLING
+
+====================================================
+
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+2. COMMON STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+3. MENU STYLING
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+
+/* ---------------------------------
+4. SLIDER STYLING
+--------------------------------- */
+
+.main-slider{ height: 500px; margin-top: 80px; overflow: hidden; position: relative; color: #fff; }
+
+.main-slider .slider-bg{ position: absolute; top: 0px; bottom: 0; left: 0px; right: 0px; z-index: -3; 
+	background-size: cover; background-image: url(../images/slider-4-1920x1080.jpg); 
+	background-position: 40% center; }
+
+.main-slider .slider-bg:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -4; 
+	background: rgba(0,0,0,.3); }
+
+.main-slider .icon{ margin: 0 10px; -webkit-transform: translateY(2px); transform: translateY(2px); }
+
+.main-slider a:focus,
+.main-slider a:hover{ color: #ddd; }
+
+
+/* ---------------------------------
+5. BLOG POST
+--------------------------------- */
+
+.blog-post{ border-bottom: 1px solid #eee; }
+
+.blog-post.last-child{ border-bottom: 0; padding-bottom: 0; }
+
+.blog-post .title-info{ font-size: .95em; color: #333; }
+
+.blog-post .read-more-btn{ position: relative; padding-bottom: 5px; }
+
+.blog-post .read-more-btn:after{ content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; 
+	background: #aaa; -webkit-transition: all .15s ease-in; transition: all .15s ease-in; }
+
+.blog-post .read-more-btn:hover:after{ opacity: 0; -webkit-transform: translateY(10px); transform: translateY(10px); }
+
+
+/* ---------------------------------
+6. SIDEBAR STYLING
+--------------------------------- */
+
+/* .sidebar{ padding: 30px 30px; background: #F6F8F6; } */
+
+.sidebar{ padding: 30px 30px; background: #0aa0d9; color: #fff; }
+
+.sidebar p{ color: #fff; }
+
+.sidebar-section a:hover, .sidebar-section a:focus, .sidebar-section a:active,
+.sidebar-section button:hover, .sidebar-section button:focus, .sidebar-section button:active{ text-decoration: none; color: #ddd; }
+
+
+.sidebar-section{ overflow: hidden; }
+
+.sidebar-section .title{ margin-bottom: 30px; } 
+
+.sidebar-section ul > li{ display: block; }
+
+.sidebar-section ul > li > a{ padding-bottom: 10px; }
+
+.sidebar-section{ padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,.2); }
+
+.sidebar-section:last-child{ padding-bottom: 0px; margin-bottom: 0px; border-bottom: 0px; }
+
+
+/* ABOUT */
+
+.sidebar-section ul.icons > li{ display: inline-block; margin-right: 10px; }
+
+
+/* NEWSLETTER */
+
+.sidebar-section.subscribe .email-input { height: 45px; line-height: normal; width: 100%; padding: 0 20px; }
+
+.sidebar-section.subscribe .submit-btn { width: 100%; height: 45px; line-height: 43px; margin-top: 15px;
+    transition: all .3s; border: 1px solid #fdd921; background: #fdd921; color: #000; }
+	
+.sidebar-section.subscribe .submit-btn:hover { background: none; color: #000; }
+
+
+/* TAGS */
+
+.sidebar-section ul.tags > li > a { font-size: .9em; padding: 7px 10px; margin: 0 10px 10px 0; float: left; 
+	border: 1px solid rgba(255,255,255,.4); }
+
+.sidebar-section ul.tags > li > a:hover { background: none; }
+
+
+/* RELATED POST */
+
+.sidebar-section .related-post{ display: block; }
+
+.sidebar-section .related-post .p-name{ line-height: 1.4; }
+
+.sidebar-section .related-post .p-name:hover{ text-decoration: underline; }
+
+.sidebar-section .related-post .date{  }
+
+
+/* FOLLOW US */
+
+.sidebar-section ul.icons > li { margin-right: 15px; font-size: 1.1em; }
+
+
+/* LIST FOOTER */
+
+.list-footer{ overflow: hidden; padding: 30px; margin-top: 20px; text-align: center; background: #F6F8F6; }
+
+.list-footer ul > li > a{ font-size: 1.3em; padding: 10px; }
+
+
+/* PRODUCT STYLING */
+
+.product-list .product{ position: relative; display: block; z-index: 1; }
+
+.product-list .product .product-image:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
+	z-index: 1; opacity: 0; background: rgba(0,0,0,.2); 
+	-webkit-transition: all .2s ease-in; transition: all .2s ease-in; }
+
+.product-list .product .icons{ position: absolute; top: 50%; left: 0; margin-top: -17.5px; right: 0; text-align: center; z-index: 1; }
+
+.product-list .product .icons > li{ opacity: 0; 
+	-webkit-transform: translateY(10px); transform: translateY(10px);-webkit-transition: all .2s;
+	-webkit-transition: all .2s; transition: all .2s; }
+
+.product-list .product .icons > li > a{ height: 35px; width: 35px; border-radius: 35px; margin: 0 5px; 
+	line-height: 35px; background: #fff; }
+
+.product-list .product .icons > li > a:hover{ box-shadow: 2px 5px 30px rgba(0,0,0,.2); background: #000; color: #fff; }
+
+.product-list .product:hover .product-image:after{ opacity: 1; }
+
+.product-list .product:hover .icons > li{ opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+
+.product-list .product .icons > li:nth-child(2){ transition-delay: .1s; }
+.product-list .product .icons > li:nth-child(3){ transition-delay: .2s; }
+
+
+.product-list .view-all-btn{ text-decoration: underline; }
+
+.product-list .view-all-btn:hover{ text-decoration: none; }
+
+
+/* ---------------------------------
+7. FOOTER SECTION STYLING
+--------------------------------- */
+
+/* common/footer-styles.css */
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	
+    /* ---------------------------------
+	4. SLIDER STYLING
+	--------------------------------- */
+	
+	.main-slider{ margin-top: 60px; height: 400px; }
+	
+   /* ---------------------------------
+	6. SIDEBAR STYLING
+	--------------------------------- */
+
+	.sidebar{ margin: 20px 0 30px; }
+
+}
