@@ -1,0 +1,551 @@
+<!-- 
+    Made by Aizaz Jamil, 2018
+    website: http://aizazjamil.com/
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ 
+<!-- Mirrored from aizazjamil.com/assets/works/ecommerce/men.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Oct 2018 06:54:34 GMT -->
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta property="og:image:width" content="1200">
+     <meta property="og:image:height" content="630">
+     <meta name="description" content="Ecommerce Responsive Website">
+     <meta name="keywords" content="HTML,CSS,Sass,jQuery,JavaScript">
+     <meta name="author" content="Ecommerce Responsive Website">
+     <meta name="abstract" content="Ecommerce Responsive Website">
+     <meta name="designer" content="Aizaz Jamil">
+     <meta name="rating" content="General">
+     <meta name="classification" content="Web Programming, Front-End">
+     <meta name="title" content="Ecommerce Responsive Website">
+     <link href="favico.html" rel="shortcut icon">
+ 
+     <title>Ecommerce Website Responsive</title>
+     <!-- CSS LIBRARIES -->
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+     <link rel="stylesheet" href="assets/css/swiper.min.css">
+     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+     <link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="assets/css/animate.min.css">
+ </head>
+ 
+ <body>
+ 
+     <!-- ========================= Start: Navbar Section ========================= -->
+     <div class="container">
+         <nav class="navbar navbar-expand-lg navbar-light">
+             <a class="navbar-brand" href="#">Ecommerce</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+ 
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                         <a class="nav-link" href="index.html"><i class="material-icons">
+                                 home
+                             </i></a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">News</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="ladies.html">Ladies</a>
+                     </li>
+                     <li class="nav-item active">
+                         <a class="nav-link" href="men.html">Men</a>
+                     </li>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">Kids</a>
+                     </li>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">Stores</a>
+                     </li>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">Contact</a>
+                     </li>
+                 </ul>
+                 <ul class="navbar-nav navbar-right">
+                     <li class="nav-item">
+                         <a href="#" class="nav-link"><i class="material-icons">search</i></a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="#" class="nav-link badge">
+                             <i class="material-icons">shopping_cart</i>
+                             <span class="badge-item">1</span>
+                         </a>
+                     </li>
+                 </ul>
+             </div>
+         </nav>
+     </div>
+     <!-- ========================= End: Navbar Section ========================= -->
+ 
+ 
+     <!-- ========================= Start: Option Section ========================= -->
+     <div class="option-section">
+         <div class="container">
+             <div class="option-wrapper">
+                 <div class="row">
+                     <div class="col-md-3">
+                         <h5 class="title">Color</h5>
+                         <ul class="color-value">
+                             <li class="color pink"></li>
+                             <li class="color gray"></li>
+                             <li class="color blue"></li>
+                             <li class="color white"></li>
+                             <li class="color yellow"></li>
+                             <li class="color green active"></li>
+                         </ul>
+                     </div>
+                     <div class="col-md-3">
+                         <h5 class="title">Size</h5>
+                         <div class="size-box">
+                             <li class="size">XS</li>
+                             <li class="size">S</li>
+                             <li class="size">M</li>
+                             <li class="size active">L</li>
+                             <li class="size">XL</li>
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                         <h5 class="title">Price</h5>
+                         <div style="display: flex;justify-content: center;">
+                             <input type="range" min="0" max="60" value="40" step="10" />
+                         </div>
+                         <ul class="total">
+                             <li>$100</li>
+                             <li>$500</li>
+                             <li>$1000</li>
+                         </ul>
+                     </div>
+                     <div class="col-md-3">
+                         <h5 class="title">Short By</h5>
+                         <div class="short-opt">
+                             <form action="#" class="select-opt" method="POST">
+                                 <div class="form-group">
+                                     <select name="" id="" class="form-control">
+                                         <option value="Normal">Normal</option>
+                                         <option value="Latest">Latest</option>
+                                     </select>
+                                 </div>
+                             </form>
+                             <ul class="two-button">
+                                 <li><button class="btn btn-primary btn-secondary"><i class="fa fa-long-arrow-right"></i></button></li>
+                                 <li><button class="btn btn-primary btn-white"><i class="fa fa-refresh"></i></button></li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- ========================= End: Option Section ========================= -->
+ 
+     <!-- ========================= Start: Sidebar Section ========================= -->
+     <div class="product-panel">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-3 sidebar-panel-wrapper">
+                     <div class="sidebar-panel">
+                         <h4 class="title-sidebar">Shop By Category</h4>
+                         <div class="accordion-panel">
+                             <aside class="sidebar">
+                                 <div id="leftside-navigation">
+                                     <ul class="level-0">
+                                         <li class="parent">
+                                             <a><span>Tops</span><i class="arrow fa fa-angle-right"></i></a>
+                                             <ul class="level-1">
+ 
+                                                 <li>
+                                                     <a href="#">Link 1</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 2</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 3</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 4</a>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="parent">
+                                             <a><span>Shirt & Blouses</span><i class="arrow fa fa-angle-right"></i></a>
+                                             <ul class="level-1">
+ 
+                                                 <li>
+                                                     <a href="#">Link 1</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 2</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 3</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 4</a>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="parent">
+                                             <a><span>Knitwear</span><i class="arrow fa fa-angle-right"></i></a>
+                                             <ul class="level-1">
+ 
+                                                 <li>
+                                                     <a href="#">Link 1</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 2</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 3</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 4</a>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="parent">
+                                             <a><span>Dresses</span><i class="arrow fa fa-angle-right"></i></a>
+                                             <ul class="level-1">
+ 
+                                                 <li>
+                                                     <a href="#">Link 1</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 2</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 3</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 4</a>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="parent">
+                                             <a><span>Max Dresses</span><i class="arrow fa fa-angle-right"></i></a>
+                                             <ul class="level-1">
+ 
+                                                 <li>
+                                                     <a href="#">Link 1</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 2</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 3</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 4</a>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="parent">
+                                             <a><span>Trousers</span><i class="arrow fa fa-angle-right"></i></a>
+                                             <ul class="level-1">
+ 
+                                                 <li>
+                                                     <a href="#">Link 1</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 2</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 3</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 4</a>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="parent">
+                                             <a><span>Jeans</span><i class="arrow fa fa-angle-right"></i></a>
+                                             <ul class="level-1">
+ 
+                                                 <li>
+                                                     <a href="#">Link 1</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 2</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 3</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 4</a>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="parent">
+                                             <a><span>Blazers</span><i class="arrow fa fa-angle-right"></i></a>
+                                             <ul class="level-1">
+ 
+                                                 <li>
+                                                     <a href="#">Link 1</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 2</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 3</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 4</a>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="parent">
+                                             <a><span>Lingerie</span><i class="arrow fa fa-angle-right"></i></a>
+                                             <ul class="level-1">
+ 
+                                                 <li>
+                                                     <a href="#">Link 1</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 2</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 3</a>
+                                                 </li>
+                                                 <li>
+                                                     <a href="#">Link 4</a>
+                                                 </li>
+                                             </ul>
+                                         </li>
+ 
+ 
+                                     </ul>
+                                 </div>
+                             </aside>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="col-md-9">
+                     <div class="row">
+ 
+                         <div class="col-md-4">
+                             <div class="product-card">
+                                 <div class="product-content">
+                                     <div class="product-name">
+                                         <h4>Lace V-neck dress</h4>
+                                         <div class="price"><span>$</span>234</div>
+                                     </div>
+                                     <ul class="stars">
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star"><i class="fa fa-star"></i></li>
+                                         <li class="star"><i class="fa fa-star"></i></li>
+                                     </ul>
+                                     <ul class="colors">
+                                         <li class="color black"></li>
+                                         <li class="color gray"></li>
+                                         <li class="color pink"></li>
+                                         <li class="color blue"></li>
+                                     </ul>
+                                     <div class="product-image-card">
+                                         <img src="assets/images/product_6/05.html" alt="">
+                                     </div>
+ 
+                                     <div class="product-info-opacity">
+                                         <div class="product-name">
+                                             <h4>Lace V-neck dress</h4>
+                                             <div class="price"><span>$</span>234</div>
+                                         </div>
+                                         <ul class="stars">
+                                             <li class="star active"><i class="fa fa-star"></i></li>
+                                             <li class="star active"><i class="fa fa-star"></i></li>
+                                             <li class="star active"><i class="fa fa-star"></i></li>
+                                             <li class="star"><i class="fa fa-star"></i></li>
+                                             <li class="star"><i class="fa fa-star"></i></li>
+                                         </ul>
+                                         <ul class="colors">
+                                             <li class="color black"></li>
+                                             <li class="color gray"></li>
+                                             <li class="color pink"></li>
+                                             <li class="color blue"></li>
+                                         </ul>
+                                         <ul class="size-box">
+                                             <li class="size">XS</li>
+                                             <li class="size">S</li>
+                                             <li class="size">M</li>
+                                             <li class="size active">L</li>
+                                             <li class="size">XL</li>
+                                         </ul>
+                                         <ul class="cart-group">
+                                             <li><a href="#" class="btn btn-primary"><i class="fa fa-heart-o"></i></a></li>
+                                             <li><a href="#" class="btn btn-primary"><i class="fa fa-eye"></i></a></li>
+                                         </ul>
+                                         <div class="button-group">
+                                             <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add
+                                                 to Cart</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-4">
+                             <div class="product-card">
+                                 <div class="product-content">
+                                     <div class="product-name">
+                                         <h4>Lace V-neck dress</h4>
+                                         <div class="price"><span>$</span>234</div>
+                                     </div>
+                                     <ul class="stars">
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star"><i class="fa fa-star"></i></li>
+                                         <li class="star"><i class="fa fa-star"></i></li>
+                                     </ul>
+                                     <ul class="colors">
+                                         <li class="color black"></li>
+                                         <li class="color gray"></li>
+                                         <li class="color pink"></li>
+                                         <li class="color blue"></li>
+                                     </ul>
+                                     <div class="product-image-card">
+                                         <img src="assets/images/product_6/06.html" alt="">
+                                     </div>
+ 
+                                     <div class="product-info-opacity">
+                                         <div class="product-name">
+                                             <h4>Lace V-neck dress</h4>
+                                             <div class="price"><span>$</span>234</div>
+                                         </div>
+                                         <ul class="stars">
+                                             <li class="star active"><i class="fa fa-star"></i></li>
+                                             <li class="star active"><i class="fa fa-star"></i></li>
+                                             <li class="star active"><i class="fa fa-star"></i></li>
+                                             <li class="star"><i class="fa fa-star"></i></li>
+                                             <li class="star"><i class="fa fa-star"></i></li>
+                                         </ul>
+                                         <ul class="colors">
+                                             <li class="color black"></li>
+                                             <li class="color gray"></li>
+                                             <li class="color pink"></li>
+                                             <li class="color blue"></li>
+                                         </ul>
+                                         <ul class="size-box">
+                                             <li class="size">XS</li>
+                                             <li class="size">S</li>
+                                             <li class="size">M</li>
+                                             <li class="size active">L</li>
+                                             <li class="size">XL</li>
+                                         </ul>
+                                         <ul class="cart-group">
+                                             <li><a href="#" class="btn btn-primary"><i class="fa fa-heart-o"></i></a></li>
+                                             <li><a href="#" class="btn btn-primary"><i class="fa fa-eye"></i></a></li>
+                                         </ul>
+                                         <div class="button-group">
+                                             <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add
+                                                 to Cart</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-4">
+                             <div class="product-card">
+                                 <div class="product-content">
+                                     <div class="product-name">
+                                         <h4>Lace V-neck dress</h4>
+                                         <div class="price"><span>$</span>234</div>
+                                     </div>
+                                     <ul class="stars">
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star"><i class="fa fa-star"></i></li>
+                                         <li class="star"><i class="fa fa-star"></i></li>
+                                     </ul>
+                                     <ul class="colors">
+                                         <li class="color black"></li>
+                                         <li class="color gray"></li>
+                                         <li class="color pink"></li>
+                                         <li class="color blue"></li>
+                                     </ul>
+                                     <div class="product-image-card">
+                                         <img src="assets/images/product_6/07.html" alt="">
+                                     </div>
+ 
+                                     <div class="product-info-opacity">
+                                         <div class="product-name">
+                                             <h4>Lace V-neck dress</h4>
+                                             <div class="price"><span>$</span>234</div>
+                                         </div>
+                                         <ul class="stars">
+                                             <li class="star active"><i class="fa fa-star"></i></li>
+                                             <li class="star active"><i class="fa fa-star"></i></li>
+                                             <li class="star active"><i class="fa fa-star"></i></li>
+                                             <li class="star"><i class="fa fa-star"></i></li>
+                                             <li class="star"><i class="fa fa-star"></i></li>
+                                         </ul>
+                                         <ul class="colors">
+                                             <li class="color black"></li>
+                                             <li class="color gray"></li>
+                                             <li class="color pink"></li>
+                                             <li class="color blue"></li>
+                                         </ul>
+                                         <ul class="size-box">
+                                             <li class="size">XS</li>
+                                             <li class="size">S</li>
+                                             <li class="size">M</li>
+                                             <li class="size active">L</li>
+                                             <li class="size">XL</li>
+                                         </ul>
+                                         <ul class="cart-group">
+                                             <li><a href="#" class="btn btn-primary"><i class="fa fa-heart-o"></i></a></li>
+                                             <li><a href="#" class="btn btn-primary"><i class="fa fa-eye"></i></a></li>
+                                         </ul>
+                                         <div class="button-group">
+                                             <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add
+                                                 to Cart</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+ 
+                         <div class="col-md-4">
+                             <div class="product-card">
+                                 <div class="product-content">
+                                     <div class="product-name">
+                                         <h4>Lace V-neck dress</h4>
+                                         <div class="price"><span>$</span>234</div>
+                                     </div>
+                                     <ul class="stars">
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star active"><i class="fa fa-star"></i></li>
+                                         <li class="star"><i class="fa fa-star"></i></li>
+                                         <li class="star"><i class="fa fa-star"></i></li>
+                                     </ul>
+                                     <ul class="colors">
+                                         <li class="color black"></li>
+                                         <li class="color gray"></li>
+                                         <li class="color pink"></li>
+                                         <li class="color blue"></li>
+                                     </ul>
+                                     <div class="product-image-card">
+                                         <img src="assets/images/product_6/05.html" alt="">
+                                     </div>
+ 
+                                    
