@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<!-- Custom Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+	
+	<link rel="stylesheet" href="master.css" media="screen">
+	<link rel="stylesheet" href="reset.css" media="screen">
+	<link rel="stylesheet" href="jquery-ui.css" media="screen">
+	<title>How to design and code a modern pricing table</title>
+	<style>
+	input[type="checkbox"] {
+		position: relative;
+		top: 2px;
+		right: 5px;
+	}
+	input[type="number"] {
+		padding: 3px;
+		border-radius: 4px;
+		border: 1px solid rgba(76, 78, 80, 0.42);
+		width: 20%;
+	}
+	.frm {padding:10px;border: 1px solid #e2e7eb;border-radius: 5px;line-height: 25px;}
+	.clear{clear:both;}
+	.pad-5{padding:5px;}
+	.pad-10{padding:10px;}
+	.pad-20{padding:20px;}
+	</style>
+</head>
+<body>
+	
+	<div id="pageContainer">
+		
+		<div class="frm">
+				<div style='margin-bottom:20px;margin-top:20px;'>
+					<input id='checkbox1' type="checkbox" onClick="calculate('home_function_',10,1)" value="1" name="home_function_checkbox_1" class="home_function_checkbox" style='margin-left:150px;'>   Functionality 1
+					<input id='checkbox2' onClick="calculate('business_function_',20,2)" type="checkbox" value="1" name="business_function_checkbox_2" class="home_function_checkbox" style='margin-left:150px;'>
+					Functionality 2
+					<input id='checkbox3' onClick="calculate('business_pro_function_', 20,3)" type="checkbox" value="1" name="business_pro_function_checkbox_3" class="home_function_checkbox" style='margin-left:150px;'>
+					Functionality 3 
+				  
+				</div>
+				<div style='margin-left:300px;'>
+					<strong>Licenses count </strong> 
+					<input onkeyup="calculate('home_function_', 10)" type="number" value="1" name="home_function_license_1" id="home_function_license" style='margin-left:15px;'>
+				</div>
+				<div class="clear pad-10"></div>
+				</div>
+			<div class="clear pad-10"></div>
+		<div id="tableContainer" style='margin-top:20px;'>
+			
+			<div class="tableCell">
+				<div class="tableHeading">
+					<h2>Home License</h2>
+					
+					<div class="price2 priceContainer">
+						<p>$10<sup>.00</sup></p>
+						<span>per month</span>
+					</div> <!-- end price1 -->
+				</div> <!-- end tableHeading -->
+			</div>
+			
+			<div class="tableCell recommended">
+				<div class="tableHeading">
+					<h2>Business License</h2>
+					
+					<div class="price3 priceContainer">
+						<p>$20<sup>.00</sup></p>
+						<span>per month</span>
+					</div> <!-- end price1 -->
+				</div> <!-- end tableHeading -->
+			</div>
+			
+			<div class="tableCell noBorder">
+				<div class="tableHeading">
+					<h2>Business Pro License</h2>
+					
+					<div class="price4 priceContainer">
+						<p>$30<sup>.00</sup></p>
+						<span>per month</span>
+					</div> <!-- end price1 -->
+				</div> <!-- end tableHeading -->
+			</div>
+			
+							
+			<div class="cl"><!-- --></div>
+				
+			<table class="pricingTableContent">
+				<tr class="signUpRow">
+					<td><a href="javascript:void(0);" class="signUpButton" onmouseover="calculate('home_function_',10,1);" onclick="calculate('home_function_',10);" cost="10" >Home License</a>
+				</td>
+					<td class="recommended"><a href="javascript:void(0);"  onmouseover="calculate('business_function_',20,2);" onclick="calculate('business_function_',20);"  class="signUpButton" cost="20" >Business License</a>
+				</td>
+					<td class="noBorder"><a href="javascript:void(0);" onmouseover="calculate('business_pro_function_',30,3);"  onclick="calculate('business_pro_function_',30);" class="signUpButton" cost="30" >Business Pro License</a>
+			</td>
+				</tr>
+
+				<!-- Table Content -->
+				<tr>
+					<td><strong>300MB</strong> Disk Space</td>
+					<td class="recommended"><strong>1GB</strong> Disk Space</td>
+					<td class="noBorder"><strong>5GB</strong> Disk Space</td>
+				</tr>
+
+				<tr class="altRow">
+					<td><strong>400MB</strong> Monthly Traffic</td>
+					<td class="recommended"><strong>1GB</strong> Monthly Traffic</td>
+					<td class="noBorder"><strong>Unlimited</strong> Monthly Traffic</td>
+				</tr>
+
+				<tr>
+					<td><strong>5</strong> Subdomains</td>
+					<td class="recommended"><strong>10</strong> Subdomains</td>
+					<td class="noBorder"><strong>Unlimited</strong> Subdomains</td>
+				</tr>
+
+				<tr class="altRow">
+					<td><strong>10</strong> Email Accounts</td>
+					<td class="recommended"><strong>25</strong> Email Accounts</td>
+					<td class="noBorder"><strong>Unlimited</strong> Email Accounts</td>
+				</tr>
+
+				<tr>
+					<td>Webmail Support</td>
+					<td class="recommended">Webmail Support</td>
+					<td class="noBorder">Webmail Support</td>
+				</tr>
+
+				<tr class="altRow">
+					<td>MySQL Support</td>
+					<td class="recommended">MySQL Support</td>
+					<td class="noBorder">MySQL Support</td>
+				</tr>
+
+				<tr>
+					<td>PHP5 Support</td>
+					<td class="recommended">PHP5 Support</td>
+					<td class="noBorder">PHP5 Support</td>
+				</tr>
+
+				<tr class="altRow">
+					<td>&nbsp;</td>
+					<td class="recommended">Plesk Control Panel</td>
+					<td class="noBorder">Plesk Control Panel</td>
+				</tr>
+
+				<tr>
+					<td>&nbsp;</td>
+					<td class="recommended">&nbsp;</td>
+					<td class="noBorder">Spam Assassin</td>
+				</tr>
+				
+				<!-- Table Footer -->
+				<tfoot>
+					<tr>
+						<td>
+							<h4 id='home_up'>$14<sup>.00</sup></h4>
+							<span>per month</span>
+							
+							<a href="javascript:void(0);" class="signUpButton" onmouseover="calculate('home_function_',10,1);" onclick="calculate('home_function_',10);" cost="10" >Home License</a>
+				
+						</td>
+
+						<td class="recommended">
+							<h4 id='buss_up'>$29<sup>.00</sup></h4>
+							<span>per month</span>
+							
+							<a href="javascript:void(0);"  onmouseover="calculate('business_function_',20,2);" onclick="calculate('business_function_',20);"  class="signUpButton" cost="20" >Business License</a>
+				
+						</td>
+
+						<td class="noBorder">
+							<h4 id='pro_up'>$59<sup>.00</sup></h4>
+							<span>per month</span>
+							
+							<a href="javascript:void(0);" onmouseover="calculate('business_pro_function_',30,3);"  onclick="calculate('business_pro_function_',30);" class="signUpButton" cost="30" >Business Pro License</a>
+			
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+			
+			<div class="show_link" style="float:right;display:none;padding: 15px 0px;" >
+				<a href="" class="link" >link</a>
+			</div>
+		</div> <!-- end tableContainer -->
+
+	</div> <!-- end pageContainer -->
+
+	<script type="text/javascript" src="css-browser-select.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+		$(document).tooltip();
+	});
+	
+	function calculate(e, amount,clickedby)
+	{
+		//you can change this variables
+		var formula = 2;
+		var volumeDiscount  =1;
+		//do not touch
+		
+		var amount = parseInt(amount);
+		var totalPrice = 0;
+		var func = 0;
+		var license_count = parseInt($('#home_function_license').val());
+		$('.home_function_checkbox').each(function(index){
+		
+			if($(this).is(':checked'))
+			{
+				func += parseInt($(this).val());
+			}
+			
+		});
+		func = func*10;
+		//alert(func);
+		var f = '';
+		if(formula == 1)
+		{
+			console.log(totalPrice);console.log(amount);
+			console.log(license_count);console.log(volumeDiscount);
+			totalPrice = func + amount * (license_count - 1) * volumeDiscount + amount;
+			
+			f = 'first';
+		}
+		else
+		{
+			totalPrice = (func + amount) * (license_count - 1) * volumeDiscount + amount + func;
+			
+		}
+		
+		if(!isNaN(totalPrice))
+		{
+			$('.show_link').show();
+			$('.link').html(link);
+			$('.link').attr('href',link);
+			
+			if(clickedby == 1 )
+			{
+				totalPrice = totalPrice+ 10;
+				$('#home_up').html("$10<sup>.00</sup></h4><span>per month </span><br><br><span>Total price : $" + totalPrice+"<sup>.00</sup></span>");
+			}
+			else if( clickedby == 2)
+			{
+				totalPrice = totalPrice+ 20;
+			$('#buss_up').html("$20<sup>.00</sup></h4><span>per month </span><br><br><span>Total price : $"+totalPrice+"<sup>.00</sup></span>");
+			}
+			else if( clickedby == 3)
+			{
+				totalPrice = totalPrice+ 30;
+			$('#pro_up').html("$30<sup>.00</sup></h4><span>per month </span><br><br><span>Total price : $"+totalPrice+"<sup>.00</sup></span>");
+			}
+		}
+		var link = "www.arksols.com?totalprice="+totalPrice;
+	}
+	calculate('home_function_',10,1);
+	calculate('business_function_',20,2);
+	calculate('business_pro_function_',30,3);
+	$('#home_function_license').change(function() {
+    
+	calculate('home_function_',10,1);
+	calculate('business_function_',20,2);
+	calculate('business_pro_function_',30,3);
+});
+
+$('#checkbox1').change(function() {
+       calculate('home_function_',10,1);
+		calculate('business_function_',20,2);
+		calculate('business_pro_function_',30,3);      
+    });
+	
+	$('#checkbox2').change(function() {
+       calculate('home_function_',10,1);
+		calculate('business_function_',20,2);
+		calculate('business_pro_function_',30,3);      
+    });
+	
+	$('#checkbox3').change(function() {
+       calculate('home_function_',10,1);
+		calculate('business_function_',20,2);
+		calculate('business_pro_function_',30,3);      
+    });
+	</script>	
+</body>
+</html>
