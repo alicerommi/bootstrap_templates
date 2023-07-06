@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head>
+<meta name="author" content="Mario Jäckle">
+<link rel="stylesheet" href="css/fractionslider.css">
+<script src="js/jquery-1.9.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$(document).ready(function(e) {
+		var audio = new Audio("images/14th_feb.mp3");
+		audio.play();	
+		audio.addEventListener('ended', function(){
+		this.currentTime = 0;
+		this.play();
+		},false);	
+	});	
+</script>
+</head>
+<body>
+
+<div class="slider-wrapper">
+    <div class="responisve-container">
+        <div class="slider">        	
+            <div class="slide">
+            	<img src="images/valentine_bg.jpg" data-position="0,-300" data-in="fade" data-delay="0" data-out="left">
+                <img src="images/hearts.png" data-position="0,0" data-in="top" data-delay="100" data-out="left">
+                <img src="images/hearts.png" data-position="0,228" data-in="top" data-delay="400" data-out="top">
+                <img src="images/hearts.png" data-position="0,452" data-in="top" data-delay="800" data-out="right">
+                <img src="images/hearts_big.png" data-position="0,620" data-in="left" data-delay="1200" data-out="right">
+                <img src="images/boy.png" data-position="100,0" data-in="right" data-delay="1600" data-out="right">
+                <img src="images/girl.png" data-position="95,290" data-in="left" data-delay="2200" data-out="left">
+                
+                <img src="images/HAPPY.png" data-position="200,600" data-in="top" data-step="1" data-out="left">
+                <img src="images/VALENTINE.png" data-position="255,530" data-in="bottom" data-step="2" data-out="left" data-ease-in="easeOutBounce">
+                <img src="images/DAY.png" data-position="330,630" data-in="bottom" data-step="3" data-out="left">
+                
+                <img src="images/gift.png" data-position="330,830" data-in="left" data-delay="1000" data-out="left">                
+                <img src="images/hearts2.png" data-position="435,700" data-in="bottom" data-delay="1300" data-out="bottomleft">
+                <img src="images/seazer.png" data-position="455,600" data-in="bottom" data-delay="1600" data-out="bottomright">
+                <img src="images/hearts3.png" data-position="455,250" data-in="right" data-delay="2000" data-out="left">
+            </div>
+            <div class="slide">
+            	<img src="images/birthday_bg.jpg" data-position="0,-300" data-in="bottom" data-delay="0" data-out="left">
+                <img src="images/clouds.png" data-position="130,300" data-in="left" data-delay="100" data-out="left">
+                <img src="images/boy-girl.png" data-position="120,450" data-in="bottom" data-delay="800" data-out="bottom">
+                <img src="images/cap.png" data-position="40,590" data-in="top" data-delay="1500" data-out="right" data-ease-in="easeOutBounce">
+                <img src="images/cartoon.png" data-position="270,370" data-in="right" data-delay="2000" data-out="right">
+                
+                <img src="images/box.png" data-position="0,0" data-in="top" data-delay="2500" data-out="bottom">
+                <img src="images/H.png" data-position="40,10" data-in="fade" data-delay="4000" data-out="left">
+                <img src="images/box.png" data-position="0,50" data-in="top" data-delay="3800" data-out="right">
+                <img src="images/A.png" data-position="40,60" data-in="fade" data-delay="5000" data-out="top">
+                <img src="images/box.png" data-position="0,100" data-in="top" data-delay="4500" data-out="left">
+                <img src="images/P.png" data-position="40,115" data-in="fade" data-delay="6000" data-out="right">
+                <img src="images/box.png" data-position="0,150" data-in="top" data-delay="5000" data-out="bottom">
+                <img src="images/P.png" data-position="40,163" data-in="fade" data-delay="6500" data-out="top">
+                <img src="images/box.png" data-position="0,200" data-in="top" data-delay="6300" data-out="left">
+                <img src="images/Y.png" data-position="40,210" data-in="fade" data-delay="7300" data-out="right">
+                <img src="images/box_2.png" data-position="83,50" data-in="bottom" data-delay="7000" data-out="left">
+                <img src="images/birthday-text.png" data-position="122,72" data-in="top" data-delay="8500" data-out="right" data-ease-in="easeOutBounce">
+            </div>            
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
